@@ -1,0 +1,127 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.header,
+.footer,
+.carousel {
+    background: #1F2937;
+}
+
+.header {
+    
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 100px;
+}
+
+.navlinks ul {
+    display: flex;
+    gap: 24px;
+}
+
+.logo {
+    font-size: 24px;
+    color: #F8FAF9;
+}
+
+.navlinks ul {
+    list-style-type: none;
+    font-size: 18px;
+    color: #E5E7EB;
+}
+
+.carousel
+{   
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 40px 100px;
+}
+.leftcontent h3 {
+    display: flex;
+    flex-wrap: wrap;
+    font-size: 48px;
+    font-weight: bolder;
+    color: #F8FAF9;
+}
+
+.leftcontent p {
+    font-size: 18px;
+    color: #E5E7EB;
+    padding-top: 20px;
+}
+
+.leftcontent button {
+    background-color: #3882f6;
+    margin-top:20px ;
+    width: 100px;
+    height: 40px;
+    border: none;
+    border-radius: 8px;
+    color: #F8FAF9;
+}
+.rightcontent{
+    justify-content: center;
+    align-items: center;
+}
+
+.destcontent{
+    padding: 60px 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.destination{
+    margin:  16px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.destinations h4 {
+    font-size: 36px;
+    font-weight: bolder;
+    color: #1F2937;
+    text-align: center;
+    padding-top: 40px;
+    
+}
+.destination img{
+    border-radius: 10px;
+}
+.destination p{
+    padding: 20px 5px;
+    text-align: center;
+    font-size: 18px;
+}
+.quote{
+    background-color: #E5E7EB;
+    padding: 60px 100px;
+}
+.quote .topcontent{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+   
+}
+.quote img{
+    border-radius: 50%;
+}
+.quote p {
+    font-size: 36px;
+    font-style: italic;
+    color: #1F2937;
+}
+.quote .name{
+    color: #1F2937;
+    font-weight: bolder;
+    text-align: right;
+    
+}
+.callToAction {
+    background-color: #3882f6;
+}
