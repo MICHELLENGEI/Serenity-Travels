@@ -101,6 +101,13 @@
     background-color: #E5E7EB;
     padding: 60px 100px;
 }
+.quote h4{
+    font-size: 36px;
+    font-weight: bolder;
+    color: #1F2937;
+    text-align: center;
+    padding-bottom:20px;
+}
 .quote .topcontent{
     display: flex;
     flex-direction: column;
