@@ -4,7 +4,7 @@
 }
 
 .header,
-.footer,
+footer,
 .carousel {
     background: #1F2937;
 }
@@ -155,5 +155,12 @@
     background-color: #3882f6;
     border-radius: 10px;
     font-weight: bolder;
+    font-size: 18px;
+}
+footer p{
+    color: #E5E7EB;
+    text-align: center;
+    padding: 20px 0;
+    font-weight: bold;
     font-size: 18px;
 }
