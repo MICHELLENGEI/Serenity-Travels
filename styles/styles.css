@@ -67,7 +67,10 @@ footer,
     border-radius: 8px;
     color: #F8FAF9;
 }
-
+.leftcontent button:hover{
+    background-color: #F8FAF9;
+    color: #3882f6;
+}
 .rightcontent{
     justify-content: center;
     align-items: center;
@@ -161,6 +164,10 @@ footer,
     border-radius: 10px;
     font-weight: bolder;
     font-size: 18px;
+}
+.callToAction button:hover{
+    color:  #3882f6;
+    background-color: #E5E7EB;
 }
 footer p{
     color: #E5E7EB;
