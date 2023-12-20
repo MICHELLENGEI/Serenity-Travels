@@ -20,6 +20,8 @@ footer,
 .navlinks ul {
     display: flex;
     gap: 24px;
+    list-style-type: none;
+    font-size: 18px;
 }
 
 .logo {
@@ -27,12 +29,14 @@ footer,
     color: #F8FAF9;
 }
 
-.navlinks ul {
-    list-style-type: none;
-    font-size: 18px;
+.navlinks ul a {
+    text-decoration: none;
     color: #E5E7EB;
+    transform: color 0.4s, border-bottom 0.4s;
 }
-
+.navlinks ul a:hover{
+    border-bottom: 3px solid #3882f6;
+}
 .carousel
 {   
     display: flex;
@@ -63,6 +67,7 @@ footer,
     border-radius: 8px;
     color: #F8FAF9;
 }
+
 .rightcontent{
     justify-content: center;
     align-items: center;
