@@ -105,6 +105,14 @@ footer,
     text-align: center;
     font-size: 18px;
 }
+.destination button{
+    background-color: #1F2937;
+    color: #F8FAF9;
+    border: none;
+    border-radius: 8px;
+    padding: 10px 20px;
+    width: 100%;
+}
 .quote{
     background-color: #E5E7EB;
     padding: 60px 100px;
