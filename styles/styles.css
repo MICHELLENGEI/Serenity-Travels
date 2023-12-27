@@ -3,20 +3,24 @@
     padding: 0;
 }
 
-.header,
+header,
 footer,
 .carousel {
     background: #1F2937;
- 
-}
 
-.header {
-    
+}
+.wrapper{
+    position: sticky;
+    top: 0;
+   
+}
+nav{
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 20px 100px;
 }
+
 
 .navlinks ul {
     display: flex;
@@ -24,7 +28,10 @@ footer,
     list-style-type: none;
     font-size: 18px;
 }
-
+nav.black{
+    background: #3882f6
+   
+}
 .logo {
     font-size: 24px;
     color: #F8FAF9;
@@ -35,16 +42,26 @@ footer,
     color: #E5E7EB;
     transform: color 0.4s, border-bottom 0.4s;
 }
-.navlinks ul a:hover{
+
+.navlinks ul a:hover {
     border-bottom: 3px solid #3882f6;
 }
-.carousel
-{   
+.booknow button{
+    background-color: #3882f6;
+    color: #F8FAF9;
+    border: none;
+    font-size: 16px;
+    border-radius: 8px;
+    padding: 10px 20px;
+    width: 100%;
+}
+.carousel {
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 40px 100px;
 }
+
 .leftcontent h3 {
     display: flex;
     flex-wrap: wrap;
@@ -62,52 +79,59 @@ footer,
 .leftcontent button {
     background-color: #3882f6;
 
-    margin-top:20px ;
+    margin-top: 20px;
     width: 100px;
     height: 40px;
     border: none;
     border-radius: 8px;
     color: #F8FAF9;
 }
-.leftcontent button:hover{
+
+.leftcontent button:hover {
     background-color: #F8FAF9;
     color: #3882f6;
 }
-.rightcontent{
+
+.rightcontent {
     justify-content: center;
     align-items: center;
 }
 
-.destcontent{
+.destcontent {
     padding: 60px 100px;
     display: flex;
     justify-content: center;
     align-items: center;
 }
-.destination{
-    margin:  16px;
+
+.destination {
+    margin: 16px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
 }
+
 .destinations h4 {
     font-size: 36px;
     font-weight: bolder;
     color: #1F2937;
     text-align: center;
     padding-top: 40px;
-    
+
 }
-.destination img{
+
+.destination img {
     border-radius: 10px;
 }
-.destination p{
+
+.destination p {
     padding: 20px 5px;
     text-align: center;
     font-size: 18px;
 }
-.destination button{
+
+.destination button {
     background-color: #1F2937;
     color: #F8FAF9;
     border: none;
@@ -115,53 +139,84 @@ footer,
     padding: 10px 20px;
     width: 100%;
 }
-.aboutus h4{
+
+.aboutus h4 {
     font-size: 36px;
     font-weight: bolder;
     color: #1F2937;
     text-align: center;
-    padding-top: 40px; 
+   padding-bottom: 60px;
     text-align: center;
 }
-.aboutuscontent{
+.aboutus{
+    margin: 60px 100px;
+}
+.aboutuscontent {
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
+.aboutustxt {
+    flex-wrap: wrap;
+    padding: 1px 40px;
+}
+.aboutustxt span{
+    font-size: 24px;
+    color: #1F2937;
+}
+.aboutustxt p{
+    font-size: 20px;
+}
+.aboutustxt button{
+    background-color: #1F2937;
+    color: #F8FAF9;
+    border: none;
+    font-size: 18px;
+    border-radius: 8px;
+    padding: 10px 20px;
+    margin-top: 20px;
+    width: 150px; 
+}
 
-.quote{
+.quote {
     background-color: #E5E7EB;
     padding: 60px 100px;
 }
-.quote h4{
+
+.quote h4 {
     font-size: 36px;
     font-weight: bolder;
     color: #1F2937;
     text-align: center;
-    padding-bottom:20px;
+    padding-bottom: 20px;
 }
-.quote .topcontent{
+
+.quote .topcontent {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-   
+
 }
-.quote img{
+
+.quote img {
     border-radius: 50%;
 }
+
 .quote p {
     font-size: 36px;
     font-style: italic;
     color: #1F2937;
 }
-.quote .name{
+
+.quote .name {
     color: #1F2937;
     font-weight: bolder;
     text-align: right;
-    
+
 }
+
 .callToAction {
     display: flex;
     justify-content: space-between;
@@ -171,17 +226,20 @@ footer,
     padding: 20px 60px;
     border-radius: 10px;
 }
-.callToAction h2{
+
+.callToAction h2 {
     font-weight: bolder;
     color: #E5E7EB;
     padding-bottom: 10px;
     font-size: 26px;
 }
-.callToAction p{
+
+.callToAction p {
     color: #E5E7EB;
     font-size: 18px;
 }
-.callToAction button{
+
+.callToAction button {
     padding: 10px 30px;
     color: #E5E7EB;
     border: 2px solid white;
@@ -190,11 +248,13 @@ footer,
     font-weight: bolder;
     font-size: 18px;
 }
-.callToAction button:hover{
-    color:  #3882f6;
+
+.callToAction button:hover {
+    color: #3882f6;
     background-color: #E5E7EB;
 }
-footer p{
+
+footer p {
     color: #E5E7EB;
     text-align: center;
     padding: 20px 0;
