@@ -6,24 +6,35 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Serenity Tavels</title>
     <link rel="stylesheet" href="./styles/styles.css">
+    
 </head>
 
 <body>
-    <div class="header">
-        <div class="logo">
-            <h3>Serenity Travels</h3>
-        </div>
-        <div class="navlinks">
-            <ul>
-                <li> <a href="#">Home</a> </li>
-                <li> <a href="#">Tour Destinations</a> </li>
-                <li> <a href="#">Tour Packages</a> </li>
-                <li> <a href="#">About Us</a> </li>
-                <li> <a href="#">Contact Us</a> </li>
-                <li> <a href="#">Blog</a> </li>
-            </ul>
-        </div>
+    <div class="wrapper">
+        <header>
+            <nav>
+                <div class="logo">
+                    <h3>Serenity Travels</h3>
+                </div>
+                <div class="navlinks">
+                    <ul>
+                        <li> <a href="#">Home</a> </li>
+                        <li> <a href="#">Tour Destinations</a> </li>
+                        <li> <a href="#">Tour Packages</a> </li>
+                        <li> <a href="#">About Us</a> </li>
+                        <li> <a href="#">Contact Us</a> </li>
+                        <li> <a href="#">Blog</a> </li>
+                    </ul>
+                </div>
+                <div class="booknow">
+                    <button>Explore Tours</button>
+                </div>
+            </nav>
+    
+        </header>
     </div>
+    
+
     <div class="carousel">
         <div class="leftcontent">
             <h3>Embark on unforgetable <br>Adventure with us!</h3>
@@ -65,13 +76,22 @@
         <h4>About Us</h4>
         <div class="aboutuscontent">
             <div class="aboutusimg">
-                <img src="./img/aboutt.jpg" alt="aboutus" width="400px" height="auto">
+                <img src="./img/aboutt.jpg" alt="aboutus" width="600px" height="auto">
             </div>
             <div class="aboutustxt">
-                <p></p>
+                <p>At <span>Serenity Travels </span> we're passionate about crafting transformative travel experiences
+                    that immerses you in Nairobi's vibrant tapestry of cultures and landscapes. With a dedicated team of
+                    experts, we specialize in creating personalized journeys that uncover hidden gems and showcase the
+                    essence of our beloved city.
+                    <br>
+
+                    <br> Our commitment to excellence and sustainable travel ensures meaningful
+                    adventures while positively impacting local communities
+                </p>
+                <button>Learn More</button>
             </div>
         </div>
-        
+
     </div>
     <div class="quote">
 
@@ -91,17 +111,24 @@
 
     </div>
     <div class="callToAction">
-        <div class="leftcta"><h2>Start your adventure Today!</h2>
-            <p>Explore our curated collection of destinations and, <br>let us craft your perfect Tour</p></div>
+        <div class="leftcta">
+            <h2>Start your adventure Today!</h2>
+            <p>Explore our curated collection of destinations and, <br>let us craft your perfect Tour</p>
+        </div>
         <div class="rightcta">
             <button>Explore now</button>
         </div>
-        
+
     </div>
     <footer>
-        <p>  Copyright &copy Designed by Michelle Ngei</p>
-    
+        <p> Copyright &copy Designed by Michelle Ngei</p>
+
     </footer>
+    <script
+    src="https://code.jquery.com/jquery-3.7.1.js"
+    integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4="
+    crossorigin="anonymous"></script>
+    <script src="./scripts/stickynavbar.js"></script>
 
 </body>
 <!--   
@@ -128,4 +155,5 @@
     KICC, 
     Art Centres,
      Nairobi National Park.-->
+
 </html>
