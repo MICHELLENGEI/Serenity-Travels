@@ -102,39 +102,34 @@ nav.black {
     align-items: center;
 }
 
-.tourscontainer {
-    padding: 60px 100px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    
 
-}
-
-.tourscontainer h4 {
+.tours h4 {
     font-size: 36px;
     font-weight: bolder;
     color: #1F2937;
     text-align: center;
     padding: 40px 0;
-}
 
-.cardcontainer {
-    overflow: hidden
 }
-
-.cardcontent {
+.tourscontainer {
     display: flex;
-    flex-direction: column;
     justify-content: center;
-    align-items: center; 
-    margin: 16px;
+    align-items: center;
+}
+.cardcontainer{
+    padding-block: 5rem;
+}
+
+.cardcontent{
+    overflow:hidden ;
+    margin-inline: 1.75rem;
+} 
+.cardarticle{
+    /* width: 300px; */
     overflow: hidden;
-    width: 300px;
     border-radius: 10px;
     box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.5);
-}
+} 
 
 .cardimg {
     width: 100%;
@@ -143,10 +138,8 @@ nav.black {
 }
 
 .carddata {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    text-align: center;
+    background-color: #fff; 
 }
 
 .cardname {
@@ -157,6 +150,7 @@ nav.black {
     padding: 20px 10px;
     text-align: center;
     font-size: 18px;
+    color: #000;
 }
 
 .cardbutton button {
@@ -166,36 +160,39 @@ nav.black {
     border-radius: 8px;
     padding: 10px 20px;
     margin-bottom: 20px;
-    width: 100%;
+    width: 100px;
 }
 
-.destination {
-    background: #fff;
-    padding: 10px 0px;
-    border-radius: 16px;
-
-
+.swiper-button-prev::after,
+.swiper-button-next::after{
+content:'';
 }
 
-.destinations h4 {
-    font-size: 36px;
-    font-weight: bolder;
+.swiper-button-next{
+right: -20px;
+}
+.swiper-button-prev{
+    left:-20px;
+}
+.swiper-button-next,
+.swiper-button-prev{
+    width: initial;
+    height: initial;
+    font-size: 4em;
     color: #1F2937;
-    text-align: center;
-    padding-top: 40px;
-
+    display: block;
 }
 
-.destcontent {
-    max-width: 1120px;
-    width: 100%;
-    background: hsl(0, 0%, 20%);
-    margin: 10px auto;
-
-
+/* Break points */
+/* small devices */
+@media screen and (max-width:320px){
+    .carddata{
+        padding : 1rem;
+    }
 }
+/* medium devices */
 
-
+/* large devices */
 
 .aboutus h4 {
     font-size: 36px;
@@ -221,10 +218,10 @@ nav.black {
     padding: 1px 40px;
 }
 
-.aboutustxt span {
+/* .aboutustxt span {
     font-size: 24px;
     color: #1F2937;
-}
+} */
 
 .aboutustxt p {
     font-size: 20px;
@@ -242,6 +239,38 @@ nav.black {
     width: 150px;
 }
 
+.specialoffers h4{
+    font-size: 36px;
+    font-weight: bolder;
+    color: #1F2937;
+    text-align: center;
+    padding-bottom: 60px;
+    text-align: center;
+}
+.specilaofferscontainer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction:row;
+}
+.specialofferscards{
+    margin: 10px 20px;
+    padding-bottom: 10px;
+    width :300px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.5);
+}
+.specialofferscards .cardimage{
+    width: 100%;
+}
+.specialofferscards .carddata{
+text-align: left;
+}
+.carddata .rating{
+    display: flex;
+    justify-content: space-between;
+    padding:10px 12px;
+}
 .quote {
     background-color: #E5E7EB;
     padding: 60px 100px;
