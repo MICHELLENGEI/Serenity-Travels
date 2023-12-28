@@ -5,8 +5,16 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Serenity Tavels</title>
+
+    <!-- swiper css -->
+    <link rel="stylesheet" href="./styles/swiper-bundle.min.css">
+
+    <!-- css -->
     <link rel="stylesheet" href="./styles/styles.css">
-    
+
+    <!-- remixicons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.0.1/remixicon.css" integrity="sha512-ZH3KB6wI5ADHaLaez5ynrzxR6lAswuNfhlXdcdhxsvOUghvf02zU1dAsOC6JrBTWbkE1WNDNs5Dcfz493fDMhA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
 </head>
 
 <body>
@@ -30,11 +38,9 @@
                     <button>Explore Tours</button>
                 </div>
             </nav>
-    
+
         </header>
     </div>
-    
-
     <div class="carousel">
         <div class="leftcontent">
             <h3>Embark on unforgetable <br>Adventure with us!</h3>
@@ -45,33 +51,88 @@
             <img src="./img/760628-removebg.png" alt="" width="500px" height="auto">
         </div>
     </div>
-    <div class="destinations">
+    <!-- tours  -->
+    <div class="tours">
         <h4>Explore Our Destination Tours</h4>
-        <div class="destcontent">
-            <div class="destination">
-                <img src="./img/long-boat-blue-water-maya-bay-phi-phi-island-krabi-thailand_335224-894.jpg" alt=""
-                    height="auto" width="250px">
-                <p>Discover our cuptivating destinations each with its own charm and alure</p>
-                <button>Explore</button>
+    <section class="tourscontainer">
+        
+        <div class="cardcontainer swiper">
+            <div class="cardcontent">
+                <div class="swiper-wrapper">
+                    <article class="cardarticle swiper-slide">
+                        <div class="cardimage">
+                            <img src="./img/images.jpeg" alt="" class="cardimg">
+                        </div>
+                        <div class="carddata">
+                            <h3 class="cardname">Wildlife Safaris</h3>
+                            <p class="carddescription">Discover our cuptivating destinations each with its own charm and
+                                alure</p>
+                            <a href="#" class="cardbutton"><button>Explore</button></a>
+                        </div>
+                    </article>
+                    <article class="cardarticle swiper-slide">
+                        <div class="cardimage">
+                            <img src="./img/happy-travel-woman-vacation-concept-funny-traveler-enjoy-her-trip-ready-to-adventure-happy-travel-woman-vacation-concept-118679424.jpg"
+                                alt="" height="auto" width="250px" class="cardimg">
+                        </div>
+                        <div class="carddata">
+                            <h3 class="cardname">Cultural Immersion</h3>
+                            <p class="carddescription">Discover our cuptivating destinations each with its own charm and
+                                alure</p>
+                            <a href="#" class="cardbutton"><button>Explore</button></a>
+                        </div>
+                    </article>
+
+                    <article class="cardarticle swiper-slide">
+                        <div class="cardimage">
+                            <img src="./img/847094a5d2df67f4fc7a7a6b77bcfe7b.jpg" alt="" class="cardimg">
+                        </div>
+                        <div class="carddata">
+                            <h3 class="cardname">Adventures</h3>
+                            <p class="carddescription">Discover our cuptivating destinations each with its own charm and
+                                alure</p>
+                            <a href="#" class="cardbutton"><button>Explore</button></a>
+                        </div>
+                    </article>
+
+                    <article class="cardarticle swiper-slide">
+                        <div class="cardimage">
+                            <img src="./img/long-boat-blue-water-maya-bay-phi-phi-island-krabi-thailand_335224-894.jpg"
+                                alt="" class="cardimg">
+                        </div>
+                        <div class="carddata">
+                            <h3 class="cardname">Beach & Resort</h3>
+                            <p class="carddescription">Discover our cuptivating destinations each with its own charm and
+                                alure</p>
+                            <a href="#" class="cardbutton"><button>Explore</button></a>
+                        </div>
+                    </article>
+                    <article class="cardarticle swiper-slide">
+                        <div class="cardimage">
+                            <img src="./img/images.jpeg" alt="" class="cardimg">
+                        </div>
+                        <div class="carddata">
+                            <h3 class="cardname">Wildlife Safaris</h3>
+                            <p class="carddescription">Discover our cuptivating destinations each with its own charm and
+                                alure</p>
+                            <a href="#" class="cardbutton"><button>Explore</button></a>
+                        </div>
+                    </article>
+                </div>
+
             </div>
-            <div class="destination">
-                <img src="./img/images.jpeg" alt="" height="auto" width="250px">
-                <p>Discover our cuptivating destinations each with its own charm and alure</p>
-                <button>Explore</button>
+            <!-- Navigation buttons -->
+            <div class="swiper-button-prev">
+                <i class="ri-arrow-left-s-line"></i>
             </div>
-            <div class="destination">
-                <img src="./img/happy-travel-woman-vacation-concept-funny-traveler-enjoy-her-trip-ready-to-adventure-happy-travel-woman-vacation-concept-118679424.jpg"
-                    alt="" height="auto" width="250px">
-                <p>Discover our cuptivating destinations each with its own charm and alure</p>
-                <button>Explore</button>
+            <div class="swiper-button-next">
+                <i class="ri-arrow-right-s-line"></i>
             </div>
-            <div class="destination">
-                <img src="./img/images.jpeg" alt="" height="auto" width="250px">
-                <p>Discover our cuptivating destinations each with its own charm and alure</p>
-                <button>Explore</button>
-            </div>
+            <!-- If we need pagination -->
+            <div class="swiper-pagination"></div>
         </div>
-    </div>
+    </section>
+</div>
     <div class="aboutus">
         <h4>About Us</h4>
         <div class="aboutuscontent">
@@ -93,6 +154,68 @@
         </div>
 
     </div>
+    <div class="callToAction" style="background: teal;">
+        <div class="leftcta">
+            <h2>Bigger Group? Get special offers up to 50% Off</h2>
+            <p>We create unforgettable adventures, customised for your group.</p>
+        </div>
+        <div class="rightcta" >
+            <button style="background: teal;color:#fff;" >Request A callback</button>
+        </div>
+
+    </div>
+    <div class="specialoffers">
+        <h4>Offer Packages</h4>
+        <div class="specilaofferscontainer">
+            <div class="specialofferscards">
+                <div class="cardimage">
+                    <img src="./img/camping.jpg" alt="" class="cardimg">
+                </div>
+                <div class="carddata">
+                    <div class="rating">
+                        <p>3 days</p>
+                        <i class="ri-heart-3-line"> 315</i>
+                    </div>
+                    <h3 class="cardname">Wildbeests Eco Camp <br> Free Camping Tents</h3>
+                    <p class="carddescription"> <strike>Ksh 30000</strike> to Ksh 25000 </p>
+                    <a href="#" class="cardbutton"><button>Book Now</button></a>
+                </div>
+            </div>
+            <div class="specialofferscards">
+                <div class="cardimage">
+                    <img src="./img/groupadventure.jpeg" alt="" class="cardimg">
+                </div>
+                <div class="carddata">
+                    <h3 class="cardname">Wildlife Safaris</h3>
+                    <p class="carddescription">Discover our cuptivating destinations each with its own charm and
+                        alure</p>
+                    <a href="#" class="cardbutton"><button>Explore</button></a>
+                </div>
+            </div>
+            <!-- <div class="specialofferscards">
+                <div class="cardimage">
+                    <img src="./img/siteseeing.jpg" alt="" class="cardimg">
+                </div>
+                <div class="carddata">
+                    <h3 class="cardname">Wildlife Safaris</h3>
+                    <p class="carddescription">Discover our cuptivating destinations each with its own charm and
+                        alure</p>
+                    <a href="#" class="cardbutton"><button>Explore</button></a>
+                </div>
+            </div> -->
+            <div class="specialofferscards">
+                <div class="cardimage">
+                    <img src="./img/honeymoon.jpg" alt="" class="cardimg">
+                </div>
+                <div class="carddata">
+                    <h3 class="cardname">Wildlife Safaris</h3>
+                    <p class="carddescription">Discover our cuptivating destinations each with its own charm and
+                        alure</p>
+                    <a href="#" class="cardbutton"><button>Explore</button></a>
+                </div>
+            </div>
+    </div>
+   
     <div class="quote">
 
         <div class="topcontent">
@@ -124,9 +247,13 @@
         <p> Copyright &copy Designed by Michelle Ngei</p>
 
     </footer>
-   
 
+<script src="./scripts/swiper-bundle.min.js"></script>
+
+<script src="./scripts/main.js"></script>
 </body>
+<!-- swiper js -->
+
 <!--   
     National Museum, 
     Railway Museum, 
