@@ -13,6 +13,7 @@ footer,
 .wrapper {
     position: sticky;
     top: 0;
+    z-index: 1000;
 
 }
 
@@ -118,11 +119,14 @@ nav.black {
 }
 .cardcontainer{
     padding-block: 5rem;
+    /* background: #1F2937; */
+    margin: 20px 100px;
 }
 
 .cardcontent{
     overflow:hidden ;
     margin-inline: 1.75rem;
+   
 } 
 .cardarticle{
     /* width: 300px; */
@@ -139,22 +143,25 @@ nav.black {
 
 .carddata {
     text-align: center;
-    background-color: #fff; 
+   
+   
 }
 
 .cardname {
-    color: #1F2937
+    padding-top: 10px;
+    font-size: 24px;
+    color: teal
 }
 
 .carddescription {
     padding: 20px 10px;
     text-align: center;
     font-size: 18px;
-    color: #000;
+   
 }
 
 .cardbutton button {
-    background-color: #1F2937;
+    background-color: teal;
     color: #F8FAF9;
     border: none;
     border-radius: 8px;
@@ -252,6 +259,7 @@ right: -20px;
     justify-content: center;
     align-items: center;
     flex-direction:row;
+    
 }
 .specialofferscards{
     margin: 10px 20px;
