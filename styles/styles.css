@@ -112,28 +112,31 @@ nav.black {
     padding: 40px 0;
 
 }
+
 .tourscontainer {
     display: flex;
     justify-content: center;
     align-items: center;
 }
-.cardcontainer{
+
+.cardcontainer {
     padding-block: 5rem;
     /* background: #1F2937; */
     margin: 20px 100px;
 }
 
-.cardcontent{
-    overflow:hidden ;
+.cardcontent {
+    overflow: hidden;
     margin-inline: 1.75rem;
-   
-} 
-.cardarticle{
+
+}
+
+.cardarticle {
     /* width: 300px; */
     overflow: hidden;
     border-radius: 10px;
     box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.5);
-} 
+}
 
 .cardimg {
     width: 100%;
@@ -143,8 +146,8 @@ nav.black {
 
 .carddata {
     text-align: center;
-   
-   
+
+
 }
 
 .cardname {
@@ -157,7 +160,7 @@ nav.black {
     padding: 20px 10px;
     text-align: center;
     font-size: 18px;
-   
+
 }
 
 .cardbutton button {
@@ -171,18 +174,20 @@ nav.black {
 }
 
 .swiper-button-prev::after,
-.swiper-button-next::after{
-content:'';
+.swiper-button-next::after {
+    content: '';
 }
 
-.swiper-button-next{
-right: -20px;
+.swiper-button-next {
+    right: -20px;
 }
-.swiper-button-prev{
-    left:-20px;
+
+.swiper-button-prev {
+    left: -20px;
 }
+
 .swiper-button-next,
-.swiper-button-prev{
+.swiper-button-prev {
     width: initial;
     height: initial;
     font-size: 4em;
@@ -192,11 +197,13 @@ right: -20px;
 
 /* Break points */
 /* small devices */
-@media screen and (max-width:320px){
-    .carddata{
-        padding : 1rem;
+@media screen and (max-width:320px) {
+    .carddata {
+        padding: 1rem;
+      
     }
 }
+
 /* medium devices */
 
 /* large devices */
@@ -246,7 +253,7 @@ right: -20px;
     width: 150px;
 }
 
-.specialoffers h4{
+.specialoffers h4 {
     font-size: 36px;
     font-weight: bolder;
     color: #1F2937;
@@ -254,30 +261,62 @@ right: -20px;
     padding-bottom: 60px;
     text-align: center;
 }
-.specilaofferscontainer{
+
+.specilaofferscontainer {
     display: flex;
     justify-content: center;
     align-items: center;
-    flex-direction:row;
-    
+    flex-direction: row;
+
 }
-.specialofferscards{
+
+.specialofferscards {
     margin: 10px 20px;
     padding-bottom: 10px;
-    width :300px;
+    width: 320px;
     border-radius: 10px;
     box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.5);
 }
-.specialofferscards .cardimage{
+
+.specialofferscards .cardimage {
     width: 100%;
+    position: relative;
 }
-.specialofferscards .carddata{
-text-align: left;
+
+.specialofferscards .cardimage .topimg {
+    top: -8px;
+    right: -24px;
+    z-index: 1;
+    position: absolute;
+    width: 120px;
+    height: auto;
 }
-.carddata .rating{
+
+/* .specialofferscards .carddata {
+    text-align: left;
+    padding-left: 20px;
+} */
+
+.carddata .rating {
     display: flex;
     justify-content: space-between;
-    padding:10px 12px;
+    padding: 10px 12px;
+}
+.carddata .rating i{
+    color: red;
+}
+.specialofferscards .cardbuttons{
+    display: flex;
+    justify-content: space-around;
+
+}
+.cardbtnspecialoffers button{
+    width: 150px;
+    padding: 20px 20px;
+    background-color: teal;
+    border: none;
+    color: #fff;
+    border-radius: 8px;
 }
 .quote {
     background-color: #E5E7EB;
