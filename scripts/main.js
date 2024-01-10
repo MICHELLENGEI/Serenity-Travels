@@ -1,3 +1,6 @@
+
+
+
 let swiperCards = new Swiper('.cardcontent', {
 
     loop: true,
@@ -32,6 +35,30 @@ let swiperCards = new Swiper('.cardcontent', {
   
   });
 
-  // new Swiper('.cardcontainer',{
-  //   slidesPerView:3,
-  // });
+  let swiperCard = new Swiper('.testimonialcardcontent', {
+
+    loop: true,
+    spaceBetween:32,
+    grabCursor:true,
+  
+    // If we need pagination
+    pagination: {
+      el: '.swiper-pagination',
+      clickable:true,
+      dynamicBullets:true,
+    },
+  
+    // Navigation arrows
+    navigation: {
+      nextEl: '.swiper-button-next',
+      prevEl: '.swiper-button-prev',
+    },
+
+    // breakpoints: {
+    //   968:{
+    //     slidesPerView:1,
+    //   },
+    
+    // },
+  
+  });
