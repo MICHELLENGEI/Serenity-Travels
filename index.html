@@ -5,6 +5,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Serenity Tavels</title>
+    <!-- bootstrap css -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
 
     <!-- swiper css -->
     <link rel="stylesheet" href="./styles/swiper-bundle.min.css">
@@ -13,19 +16,23 @@
     <link rel="stylesheet" href="./styles/styles.css">
 
     <!-- remixicons -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.0.1/remixicon.css" integrity="sha512-ZH3KB6wI5ADHaLaez5ynrzxR6lAswuNfhlXdcdhxsvOUghvf02zU1dAsOC6JrBTWbkE1WNDNs5Dcfz493fDMhA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.0.1/remixicon.css"
+        integrity="sha512-ZH3KB6wI5ADHaLaez5ynrzxR6lAswuNfhlXdcdhxsvOUghvf02zU1dAsOC6JrBTWbkE1WNDNs5Dcfz493fDMhA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
 
 </head>
 
 <body>
     <div class="wrapper">
         <header>
+            <div class="logo">
+                <h3>Serenity Travels</h3>
+            </div>
             <nav>
-                <div class="logo">
-                    <h3>Serenity Travels</h3>
-                </div>
+
+                <button class="menutoggle"><i class="ri-menu-line"></i></button>
                 <div class="navlinks">
-                    <ul>
+                    <ul class="menu">
                         <li> <a href="#">Home</a> </li>
                         <li> <a href="#">Tour Destinations</a> </li>
                         <li> <a href="#">Tour Packages</a> </li>
@@ -34,11 +41,11 @@
                         <li> <a href="#">Blog</a> </li>
                     </ul>
                 </div>
-                <div class="booknow">
-                    <button>Explore Tours</button>
-                </div>
-            </nav>
 
+            </nav>
+            <div class="booknow">
+                <button>Explore Tours</button>
+            </div>
         </header>
     </div>
     <div class="carousel">
@@ -54,85 +61,90 @@
     <!-- tours  -->
     <div class="tours">
         <h4>Explore Our Destination Tours</h4>
-    <section class="tourscontainer">
-        
-        <div class="cardcontainer swiper">
-            <div class="cardcontent">
-                <div class="swiper-wrapper">
-                    <article class="cardarticle swiper-slide">
-                        <div class="cardimage">
-                            <img src="./img/images.jpeg" alt="" class="cardimg">
-                        </div>
-                        <div class="carddata">
-                            <h3 class="cardname">Wildlife Safaris</h3>
-                            <p class="carddescription">Discover our cuptivating destinations each with its own charm and
-                                alure</p>
-                            <a href="#" class="cardbutton"><button>Explore</button></a>
-                        </div>
-                    </article>
-                    <article class="cardarticle swiper-slide">
-                        <div class="cardimage">
-                            <img src="./img/happy-travel-woman-vacation-concept-funny-traveler-enjoy-her-trip-ready-to-adventure-happy-travel-woman-vacation-concept-118679424.jpg"
-                                alt="" height="auto" width="250px" class="cardimg">
-                        </div>
-                        <div class="carddata">
-                            <h3 class="cardname">Cultural Immersion</h3>
-                            <p class="carddescription">Discover our cuptivating destinations each with its own charm and
-                                alure</p>
-                            <a href="#" class="cardbutton"><button>Explore</button></a>
-                        </div>
-                    </article>
+        <section class="tourscontainer">
 
-                    <article class="cardarticle swiper-slide">
-                        <div class="cardimage">
-                            <img src="./img/847094a5d2df67f4fc7a7a6b77bcfe7b.jpg" alt="" class="cardimg">
-                        </div>
-                        <div class="carddata">
-                            <h3 class="cardname">Adventures</h3>
-                            <p class="carddescription">Discover our cuptivating destinations each with its own charm and
-                                alure</p>
-                            <a href="#" class="cardbutton"><button>Explore</button></a>
-                        </div>
-                    </article>
+            <div class="cardcontainer swiper">
+                <div class="cardcontent">
+                    <div class="swiper-wrapper">
+                        <article class="cardarticle swiper-slide">
+                            <div class="cardimage">
+                                <img src="./img/images.jpeg" alt="" class="cardimg">
+                            </div>
+                            <div class="carddata">
+                                <h3 class="cardname">Wildlife Safaris</h3>
+                                <p class="carddescription">Discover our cuptivating destinations each with its own charm
+                                    and
+                                    alure</p>
+                                <a href="#" class="cardbutton"><button>Explore</button></a>
+                            </div>
+                        </article>
+                        <article class="cardarticle swiper-slide">
+                            <div class="cardimage">
+                                <img src="./img/happy-travel-woman-vacation-concept-funny-traveler-enjoy-her-trip-ready-to-adventure-happy-travel-woman-vacation-concept-118679424.jpg"
+                                    alt="" height="auto" width="250px" class="cardimg">
+                            </div>
+                            <div class="carddata">
+                                <h3 class="cardname">Cultural Immersion</h3>
+                                <p class="carddescription">Discover our cuptivating destinations each with its own charm
+                                    and
+                                    alure</p>
+                                <a href="#" class="cardbutton"><button>Explore</button></a>
+                            </div>
+                        </article>
 
-                    <article class="cardarticle swiper-slide">
-                        <div class="cardimage">
-                            <img src="./img/long-boat-blue-water-maya-bay-phi-phi-island-krabi-thailand_335224-894.jpg"
-                                alt="" class="cardimg">
-                        </div>
-                        <div class="carddata">
-                            <h3 class="cardname">Beach & Resort</h3>
-                            <p class="carddescription">Discover our cuptivating destinations each with its own charm and
-                                alure</p>
-                            <a href="#" class="cardbutton"><button>Explore</button></a>
-                        </div>
-                    </article>
-                    <article class="cardarticle swiper-slide">
-                        <div class="cardimage">
-                            <img src="./img/images.jpeg" alt="" class="cardimg">
-                        </div>
-                        <div class="carddata">
-                            <h3 class="cardname">Wildlife Safaris</h3>
-                            <p class="carddescription">Discover our cuptivating destinations each with its own charm and
-                                alure</p>
-                            <a href="#" class="cardbutton"><button>Explore</button></a>
-                        </div>
-                    </article>
+                        <article class="cardarticle swiper-slide">
+                            <div class="cardimage">
+                                <img src="./img/847094a5d2df67f4fc7a7a6b77bcfe7b.jpg" alt="" class="cardimg">
+                            </div>
+                            <div class="carddata">
+                                <h3 class="cardname">Adventures</h3>
+                                <p class="carddescription">Discover our cuptivating destinations each with its own charm
+                                    and
+                                    alure</p>
+                                <a href="#" class="cardbutton"><button>Explore</button></a>
+                            </div>
+                        </article>
+
+                        <article class="cardarticle swiper-slide">
+                            <div class="cardimage">
+                                <img src="./img/long-boat-blue-water-maya-bay-phi-phi-island-krabi-thailand_335224-894.jpg"
+                                    alt="" class="cardimg">
+                            </div>
+                            <div class="carddata">
+                                <h3 class="cardname">Beach & Resort</h3>
+                                <p class="carddescription">Discover our cuptivating destinations each with its own charm
+                                    and
+                                    alure</p>
+                                <a href="#" class="cardbutton"><button>Explore</button></a>
+                            </div>
+                        </article>
+                        <article class="cardarticle swiper-slide">
+                            <div class="cardimage">
+                                <img src="./img/images.jpeg" alt="" class="cardimg">
+                            </div>
+                            <div class="carddata">
+                                <h3 class="cardname">Wildlife Safaris</h3>
+                                <p class="carddescription">Discover our cuptivating destinations each with its own charm
+                                    and
+                                    alure</p>
+                                <a href="#" class="cardbutton"><button>Explore</button></a>
+                            </div>
+                        </article>
+                    </div>
+
                 </div>
-
+                <!-- Navigation buttons -->
+                <div class="swiper-button-prev">
+                    <i class="ri-arrow-left-s-line"></i>
+                </div>
+                <div class="swiper-button-next">
+                    <i class="ri-arrow-right-s-line"></i>
+                </div>
+                <!-- If we need pagination -->
+                <div class="swiper-pagination"></div>
             </div>
-            <!-- Navigation buttons -->
-            <div class="swiper-button-prev">
-                <i class="ri-arrow-left-s-line"></i>
-            </div>
-            <div class="swiper-button-next">
-                <i class="ri-arrow-right-s-line"></i>
-            </div>
-            <!-- If we need pagination -->
-            <div class="swiper-pagination"></div>
-        </div>
-    </section>
-</div>
+        </section>
+    </div>
     <div class="aboutus">
         <h4>About Us</h4>
         <div class="aboutuscontent">
@@ -159,8 +171,8 @@
             <h2>Bigger Group? Get special offers up to 50% Off</h2>
             <p>We create unforgettable adventures, customised for your group.</p>
         </div>
-        <div class="rightcta" >
-            <button >Request A callback</button>
+        <div class="rightcta">
+            <button>Request A callback</button>
         </div>
 
     </div>
@@ -168,9 +180,9 @@
         <h4>Offer Packages</h4>
         <div class="specilaofferscontainer">
             <div class="specialofferscards">
-                
+
                 <div class="cardimage">
-                    <img src="./img/specialoffertag-removebg-preview.png" alt="" class="topimg" >
+                    <img src="./img/specialoffertag-removebg-preview.png" alt="" class="topimg">
                     <img src="./img/camping.jpg" alt="" class="cardimg">
                 </div>
                 <div class="carddata">
@@ -179,17 +191,18 @@
                         <i class="ri-heart-3-line"> 315</i>
                     </div>
                     <h3 class="cardname">Wildbeests Eco Camp <br> Free Camping Tents</h3>
-                    <p class="carddescription">  <span style="color: red;"> <strike>Ksh 30000</strike></span> to Ksh 25000 </p>
+                    <p class="carddescription"> <span style="color: red;"> <strike>Ksh 30000</strike></span> to Ksh
+                        25000 </p>
                     <div class="cardbuttons">
                         <a href="#" class="cardbtnspecialoffers"><button>Book Now</button></a>
                         <a href="#" class="cardbtnspecialoffers"><button>Request Callback</button></a>
                     </div>
-                    
+
                 </div>
             </div>
             <div class="specialofferscards">
                 <div class="cardimage">
-                    <img src="./img/specialoffertag-removebg-preview.png" alt="" class="topimg" >
+                    <img src="./img/specialoffertag-removebg-preview.png" alt="" class="topimg">
                     <img src="./img/groupadventure.jpeg" alt="" class="cardimg">
                 </div>
                 <div class="carddata">
@@ -198,12 +211,13 @@
                         <i class="ri-heart-3-line"> 409</i>
                     </div>
                     <h3 class="cardname">Group Adventure Package <br> Free Camping Tents</h3>
-                    <p class="carddescription"><span style="color: red;"> <strike>Ksh 20000</strike></span> to Ksh 15000 </p>
+                    <p class="carddescription"><span style="color: red;"> <strike>Ksh 20000</strike></span> to Ksh 15000
+                    </p>
                     <div class="cardbuttons">
                         <a href="#" class="cardbtnspecialoffers"><button>Book Now</button></a>
                         <a href="#" class="cardbtnspecialoffers"><button>Request Callback</button></a>
                     </div>
-                    
+
                 </div>
             </div>
             <!-- <div class="specialofferscards">
@@ -219,7 +233,7 @@
             </div> -->
             <div class="specialofferscards">
                 <div class="cardimage">
-                    <img src="./img/specialoffertag-removebg-preview.png" alt="" class="topimg" >
+                    <img src="./img/specialoffertag-removebg-preview.png" alt="" class="topimg">
                     <img src="./img/honeymoon.jpg" alt="" class="cardimg">
                 </div>
                 <div class="carddata">
@@ -228,51 +242,169 @@
                         <i class="ri-heart-3-line"> 493</i>
                     </div>
                     <h3 class="cardname">Wildbeests Eco Camp <br> Free Camping Tents</h3>
-                    <p class="carddescription"> <span style="color: red;"> <strike>Ksh 30000</strike></span>  to Ksh 25000 </p>
+                    <p class="carddescription"> <span style="color: red;"> <strike>Ksh 30000</strike></span> to Ksh
+                        25000 </p>
                     <div class="cardbuttons">
                         <a href="#" class="cardbtnspecialoffers"><button>Book Now</button></a>
                         <a href="#" class="cardbtnspecialoffers"><button>Request Callback</button></a>
                     </div>
-                    
+
                 </div>
             </div>
-    </div>
-   
-    <div class="quote">
-
-        <div class="topcontent">
-            <h4>Testimonial</h4>
-            <img src="./img/testimonial.jpg" alt="testimonial" height="100px" width="100px">
-            <p>"Thank you for arranging an amazing trip. The whole trip went very smoothly and we all had our best
-                holiday
-                ever. The trek was the highlight and we had the best guides and the staff at all the lodges were great.
-                The
-                trip could not have been better."</p>
         </div>
 
-        <div class="name">
-            <h2>Maria Mendezez</h2>
+        <div class="quote">
+
+            <div class="topcontent">
+                <h4>Testimonial</h4>
+                <div class="swiper">
+                    <!-- Additional required wrapper -->
+                    <div class="testimonialcardcontent">
+                        <div class="swiper-wrapper">
+                            <!-- Slides -->
+                            <div class="swiper-slide">
+                                <div class="testimonialimg">
+                                    <img src="./img/testimonial.jpg" alt="testimonial" height="100px" width="100px">
+                                </div>
+
+                                <p>"Thank you for arranging an amazing trip. The whole trip went very smoothly and we
+                                    all
+                                    had our best
+                                    holiday
+                                    ever. The trek was the highlight and we had the best guides and the staff at all the
+                                    lodges were great.
+                                    The
+                                    trip could not have been better."</p>
+                                <div class="name">
+                                    <h2>Maria Mendezez</h2>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="testimonialimg">
+                                    <img src="./img/testimonial.jpg" alt="testimonial" height="100px" width="100px">
+                                </div>
+                                <p>"The whole trip went very smoothly and we all
+                                    had our best holiday ever. The trek was the highlight and we had the best guides and
+                                    the staff at all the
+                                    lodges were great. The trip could not have been better."</p>
+                                <div class="name">
+                                    <h2>Jane Doe</h2>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="testimonialimg">
+                                    <img src="./img/testimonial.jpg" alt="testimonial" height="100px" width="100px">
+                                </div>
+                                <p>"Thank you for arranging an amazing trip. The whole trip went very smoothly and we
+                                    all
+                                    had our best
+                                    holiday
+                                    ever. The trek was the highlight and we had the best guides and the staff at all the
+                                    lodges were great.
+                                    The
+                                    trip could not have been better."</p>
+                                <div class="name">
+                                    <h2>Maria Mendezez3</h2>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- If we need pagination -->
+                    <div class="swiper-pagination"></div>
+
+                    <!-- If we need navigation buttons -->
+                    <div class="swiper-button-prev">
+                        <i class="ri-arrow-left-s-line"></i>
+                    </div>
+                    <div class="swiper-button-next">
+                        <i class="ri-arrow-right-s-line"></i>
+                    </div>
+                </div>
+
+            </div>
+
         </div>
+        <div class="callToAction">
+            <div class="leftcta">
+                <h2>Start your adventure Today!</h2>
+                <p>Explore our curated collection of destinations and, <br>let us craft your perfect Tour</p>
+            </div>
+            <div class="rightcta">
+                <button>Explore now</button>
+            </div>
 
-    </div>
-    <div class="callToAction">
-        <div class="leftcta">
-            <h2>Start your adventure Today!</h2>
-            <p>Explore our curated collection of destinations and, <br>let us craft your perfect Tour</p>
         </div>
-        <div class="rightcta">
-            <button>Explore now</button>
-        </div>
+        <footer>
 
-    </div>
-    <footer>
-        <p> Copyright &copy Designed by Michelle Ngei</p>
 
-    </footer>
+            <div class="footersections">
+                <div class="aboutfooter">
+                    <h6> Serenity Travels</h6>
 
-<script src="./scripts/swiper-bundle.min.js"></script>
+                    <div class="aboutparagraph">
+                        <p>At Serenity Travels we're <br> passionate about crafting <br> transformative travel experiences <br>
+                            that immerses you in Nairobi's  <br> vibrant tapestry of cultures <br>and landscapes. </p>
+                    </div>
+                    </div>
+                    
+                <div class="contactinfo">
+                    <h6>Contact Info</h6>
+                    <div class="contacticons">
 
-<script src="./scripts/main.js"></script>
+                        <a href=""><i class="ri-map-pin-line"></i> Africa 118, Westlands Business Centre, <br> 7 Floor,  Chiromo Lane, Westlands, Nairobi.</a>
+                        <a href=""> <i class="ri-phone-line"></i> +254 712 345 678</a>
+                        <a href=""><i class="ri-mail-line"></i> serenitytravels@gmail.com</a>
+
+                    </div>
+                </div>
+                <div class="socialmedialinks">
+                    <h6>Social Media</h6>
+                    <div class="socialmediaicons">
+
+                        <a> <i class="ri-whatsapp-line"> Whatsapp</i></a>
+                        <a> <i class="ri-facebook-line"> Facebook</i></a>
+                        <a><i class="ri-twitter-line"> Twitter</i></a>
+                        <a><i class="ri-twitter-line"> Twitter</i></a>
+
+                    </div>
+                </div>
+                <div class="quicklinks">
+                    <h6>Quick Links</h6>
+                    <div class="quicklinkicons">
+
+                        <a href="">Tours Destination</a>
+                        <a href="">Tours Packages</a>
+                        <a href="">Blog</a>
+                    </div>
+
+
+                </div>
+                <div class="newsletter">
+                    <h6>Subscribe to our Newsletter</h6>
+                    <form action="/subscribe" method="post">
+                        <input type="email" name="email" placeholder=" Enter your email" required>
+                        <button type="submit">Subscribe</button>
+
+                    </form>
+                    <p>Get exclusive offers and updates directly in your inbox!</p>
+                </div>
+
+
+            </div>
+            <div class="bottom">
+                <p> Copyright &copy Designed by Michelle Ngei</p>
+            </div>
+
+        </footer>
+        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
+            integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"
+            crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"
+            integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF"
+            crossorigin="anonymous"></script>
+        <script src="./scripts/swiper-bundle.min.js"></script>
+
+        <script src="./scripts/main.js"></script>
 </body>
 <!-- swiper js -->
 
