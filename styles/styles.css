@@ -7,7 +7,6 @@ header,
 footer,
 .carousel {
     background: #1F2937;
-
 }
 
 .wrapper {
@@ -17,7 +16,20 @@ footer,
 
 }
 
-nav {
+.menutoggle {
+    display: none;
+}
+
+.menutoggle i {
+    background: #1F2937;
+    color: #F8FAF9;
+    padding: 20px;
+    border: none;
+    font-size: 32px;
+    cursor: pointer;
+}
+
+header {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -84,7 +96,6 @@ nav.black {
 
 .leftcontent button {
     background-color: #3882f6;
-
     margin-top: 20px;
     width: 100px;
     height: 40px;
@@ -109,7 +120,7 @@ nav.black {
     font-weight: bolder;
     color: #1F2937;
     text-align: center;
-    padding: 40px 0;
+    padding: 20px 0;
 
 }
 
@@ -117,25 +128,27 @@ nav.black {
     display: flex;
     justify-content: center;
     align-items: center;
+
 }
 
 .cardcontainer {
-    padding-block: 5rem;
-    /* background: #1F2937; */
-    margin: 20px 100px;
+    padding: 40px 20px;
+    margin: 0px 80px;
+
 }
 
 .cardcontent {
     overflow: hidden;
-    margin-inline: 1.75rem;
+    margin-inline: 1.5rem;
 
 }
 
 .cardarticle {
     /* width: 300px; */
     overflow: hidden;
-    border-radius: 10px;
-    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.5);
+    border-radius: 8px;
+    /* border: 2px solid teal; */
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.20);
 }
 
 .cardimg {
@@ -195,12 +208,16 @@ nav.black {
     display: block;
 }
 
+.swiper-pagination .swiper-pagination-bullet.swiper-pagination-bullet-active {
+    background-color: teal;
+}
+
 /* Break points */
 /* small devices */
 @media screen and (max-width:320px) {
     .carddata {
         padding: 1rem;
-      
+
     }
 }
 
@@ -238,7 +255,7 @@ nav.black {
 } */
 
 .aboutustxt p {
-    font-size: 20px;
+    
     row-gap: 20px;
 }
 
@@ -272,15 +289,18 @@ nav.black {
 
 .specialofferscards {
     margin: 10px 20px;
-    padding-bottom: 10px;
-    width: 320px;
-    border-radius: 10px;
-    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.5);
+    padding-bottom: 40px;
+    width: 340px;
+    /* border-radius: 10px;
+    box-shadow: 2px 2px 4px  rgba(0, 0, 0, 0.25); */
 }
 
 .specialofferscards .cardimage {
     width: 100%;
     position: relative;
+}
+.specialofferscards  .cardname{
+    color: #3882f6;
 }
 
 .specialofferscards .cardimage .topimg {
@@ -292,33 +312,35 @@ nav.black {
     height: auto;
 }
 
-/* .specialofferscards .carddata {
-    text-align: left;
-    padding-left: 20px;
-} */
 
 .carddata .rating {
     display: flex;
     justify-content: space-between;
     padding: 10px 12px;
 }
-.carddata .rating i{
+
+.carddata .rating i {
     color: red;
 }
-.specialofferscards .cardbuttons{
+
+.specialofferscards .cardbuttons {
     display: flex;
     justify-content: space-around;
 
 }
-.cardbtnspecialoffers button{
-    width: 150px;
-    padding: 20px 20px;
-    background-color: teal;
+
+.cardbtnspecialoffers button {
+    width: 170px;
+    margin: 0 5px;
+    padding: 8px 10px;
+    background-color: #3882f6;
     border: none;
     color: #fff;
     border-radius: 8px;
 }
+
 .quote {
+    margin: 60px 0;
     background-color: #E5E7EB;
     padding: 60px 100px;
 }
@@ -331,7 +353,7 @@ nav.black {
     padding-bottom: 20px;
 }
 
-.quote .topcontent {
+.quote .testimonialimg {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -339,21 +361,53 @@ nav.black {
 
 }
 
+.testimonialcardcontent {
+    overflow: hidden;
+}
+
 .quote img {
     border-radius: 50%;
 }
 
-.quote p {
+.quote .testimonialcardcontent p {
     font-size: 36px;
     font-style: italic;
     color: #1F2937;
+    margin: 0 40px;
 }
 
-.quote .name {
+.quote .testimonialcardcontent .name h2 {
+    margin: 20px 0;
     color: #1F2937;
     font-weight: bolder;
     text-align: right;
 
+}
+
+.quote .swiper-button-prev::after,
+.quote .swiper-button-next::after {
+    content: '';
+}
+
+.quote .swiper-button-next {
+    right: -20px;
+}
+
+.quote .swiper-button-prev {
+    left: -20px;
+}
+
+.quote .swiper-button-next,
+.quote .swiper-button-prev {
+    width: initial;
+    height: initial;
+    font-size: 4em;
+    color: #1F2937;
+    display: block;
+}
+
+.swiper-pagination .swiper-pagination-bullet.swiper-pagination-bullet-active {
+    background-color: teal;
 }
 
 .callToAction {
@@ -369,13 +423,13 @@ nav.black {
 .callToAction h2 {
     font-weight: bolder;
     color: #E5E7EB;
-    padding-bottom: 10px;
-    font-size: 26px;
+    padding-bottom: 5px;
+    font-size: 20px;
 }
 
 .callToAction p {
     color: #E5E7EB;
-    font-size: 18px;
+    font-size: 16px;
 }
 
 .callToAction button {
@@ -385,7 +439,7 @@ nav.black {
     background-color: #3882f6;
     border-radius: 10px;
     font-weight: bolder;
-    font-size: 18px;
+    font-size: 16px;
 }
 
 .callToAction button:hover {
@@ -393,10 +447,92 @@ nav.black {
     background-color: #E5E7EB;
 }
 
+.footersections {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    color: white;
+    padding: 20px 60px;
+}
+
+footer .footersections .contacticons,
+footer .footersections .socialmediaicons,
+footer .footersections .quicklinkicons,
+footer .footersections .about
+ {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+}
+
+footer .footersections .contactinfo h6,
+footer .footersections .socialmedialinks h6,
+footer .footersections .quicklinks h6,
+footer .footersections .newsletter h6,
+footer .footersections .aboutfooter h6{
+    padding-top: 20px;
+    color: #3882f6;
+    font-weight: bolder;
+}
+
+footer .footersections .contactinfo,
+footer .footersections .socialmedialinks,
+footer .footersections .quicklinks,
+footer .footersections .newsletter,
+footer .footersections .aboutfooter  {
+    height: 200px;
+    margin: 0 20px;
+}
+
+
+footer .footersections .contacticons a,
+footer .footersections .socialmediaicons a,
+footer .footersections .quicklinkicons a {
+    text-decoration: none;
+    color: white;
+    padding-top: 20px;
+    font-size: 14px;
+}
+
+footer .footersections .aboutfooter p{
+    font-size: 12px;
+    text-align: left;
+   
+}
+footer .newsletter form{
+    display:flex;
+    justify-content:center;
+    flex-direction: column;
+    align-items: start;
+    padding-top: 20px;
+}
+footer .newsletter input{
+    border-radius: 4px;
+    border: none;
+    height: 30px;
+    
+}
+footer .newsletter button{
+    margin: 10px 0;
+    padding: 5px 10px;
+    color: #E5E7EB;
+    background-color: #3882f6;
+    border-radius: 4px;
+    font-weight: bolder;
+    font-size: 12px;
+    border: none;
+}
+footer .newsletter p{
+    font-size: 12px;
+}
 footer p {
     color: #E5E7EB;
     text-align: center;
     padding: 20px 0;
     font-weight: bold;
     font-size: 18px;
+}
+footer .bottom p{
+    font-size: 12px;
 }
