@@ -255,7 +255,7 @@ nav.black {
 } */
 
 .aboutustxt p {
-    
+
     row-gap: 20px;
 }
 
@@ -299,7 +299,8 @@ nav.black {
     width: 100%;
     position: relative;
 }
-.specialofferscards  .cardname{
+
+.specialofferscards .cardname {
     color: #3882f6;
 }
 
@@ -447,6 +448,106 @@ nav.black {
     background-color: #E5E7EB;
 }
 
+/* blog */
+.custom-carousel-img{
+    height: 550px;
+    width: 100%;
+    object-fit: cover;
+}
+.firstblogrow {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 100px;
+    margin: 40px 0;
+}
+
+.firstblogrow .leftblogcontent {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.firstblogrow .leftblogcontent .blogcards1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 350px;
+    margin: 20px 20px;
+    border: none;
+}
+
+.firstblogrow .leftblogcontent .blogcards1 .cardimg {
+    width: 350px;
+    height: 200px;
+}
+
+.firstblogrow .leftblogcontent .blogcards1 .carddata {
+    text-align: left;
+    padding: 20px 0;
+
+}
+
+.firstblogrow .rightblogcontent .rightblogcarddata {
+    margin-bottom: 35px;
+}
+.secondblogrow {
+    display :flex ;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 100px;
+    margin: 40px 0;
+}
+.secondblogrow .blogcards2 .carddata {
+    padding: 10px 20px;
+    text-align: left;
+    /* font-size: 16px; */
+}
+.secondblogrow .cardimage{
+    display :flex ;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+.secondblogrow .cardimage .cardimg2{
+    height:170px;
+    width: 270px;
+    border-radius: 8px;
+}
+.thirdblogrow{
+    display :flex ;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 100px; 
+    margin: 40px 0; 
+}
+.thirdblogrow .leftcontent{
+    margin: 20px 20px;
+}
+.thirdblogrow .leftblogcarddata{
+    margin-bottom: 40px;
+}
+.thirdblogrow .leftblogcarddata h5{
+font-weight: bolder;
+color: black;
+font-size: 24px; 
+}
+.thirdblogrow .leftblogcarddata p{
+    color: black; font-size: 16px;
+}
+.thirdblogrow .rightcontent .blogcards3 .carddata{
+    text-align: left;
+}
+.thirdblogrow .rightcontent .blogcards3 .cardimg{
+    width: 800px;
+    height: auto;
+}
+/* footer */
 .footersections {
     display: flex;
     justify-content: space-around;
@@ -458,8 +559,7 @@ nav.black {
 footer .footersections .contacticons,
 footer .footersections .socialmediaicons,
 footer .footersections .quicklinkicons,
-footer .footersections .about
- {
+footer .footersections .about {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -470,7 +570,7 @@ footer .footersections .contactinfo h6,
 footer .footersections .socialmedialinks h6,
 footer .footersections .quicklinks h6,
 footer .footersections .newsletter h6,
-footer .footersections .aboutfooter h6{
+footer .footersections .aboutfooter h6 {
     padding-top: 20px;
     color: #3882f6;
     font-weight: bolder;
@@ -480,7 +580,7 @@ footer .footersections .contactinfo,
 footer .footersections .socialmedialinks,
 footer .footersections .quicklinks,
 footer .footersections .newsletter,
-footer .footersections .aboutfooter  {
+footer .footersections .aboutfooter {
     height: 200px;
     margin: 0 20px;
 }
@@ -495,25 +595,28 @@ footer .footersections .quicklinkicons a {
     font-size: 14px;
 }
 
-footer .footersections .aboutfooter p{
+footer .footersections .aboutfooter p {
     font-size: 12px;
     text-align: left;
-   
+
 }
-footer .newsletter form{
-    display:flex;
-    justify-content:center;
+
+footer .newsletter form {
+    display: flex;
+    justify-content: center;
     flex-direction: column;
     align-items: start;
     padding-top: 20px;
 }
-footer .newsletter input{
+
+footer .newsletter input {
     border-radius: 4px;
     border: none;
     height: 30px;
-    
+
 }
-footer .newsletter button{
+
+footer .newsletter button {
     margin: 10px 0;
     padding: 5px 10px;
     color: #E5E7EB;
@@ -523,9 +626,11 @@ footer .newsletter button{
     font-size: 12px;
     border: none;
 }
-footer .newsletter p{
+
+footer .newsletter p {
     font-size: 12px;
 }
+
 footer p {
     color: #E5E7EB;
     text-align: center;
@@ -533,6 +638,7 @@ footer p {
     font-weight: bold;
     font-size: 18px;
 }
-footer .bottom p{
+
+footer .bottom p {
     font-size: 12px;
 }
