@@ -76,11 +76,14 @@ footer,
 .leftcontent button {
     background-color: #3882f6;
     margin-top: 20px;
-    width: 120px;
+    width: 160px;
     height: 40px;
     border: none;
     border-radius: 6px;
     color: #F8FAF9;
+}
+.leftcontent button a{
+    color: #fff;
 }
 
 .leftcontent button:hover {
@@ -251,9 +254,12 @@ footer,
     border: none;
     font-size: 18px;
     border-radius: 8px;
-    padding: 10px 20px;
     margin-top: 20px;
-    width: 150px;
+    width: 180px;
+}
+.aboutustxt button a ,
+.aboutustxt button a:hover {
+    color: #fff;
 }
 
 .specialoffers h4 {
