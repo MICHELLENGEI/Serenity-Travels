@@ -5,7 +5,8 @@
 
 header,
 footer,
-.carousel {
+.navbar-brand,
+.homecarousel {
     background: #1F2937;
 }
 
@@ -16,51 +17,29 @@ footer,
 
 }
 
-.menutoggle {
-    display: none;
-}
-
-.menutoggle i {
-    background: #1F2937;
+.navbar-brand {
     color: #F8FAF9;
-    padding: 20px;
-    border: none;
     font-size: 32px;
-    cursor: pointer;
 }
 
-header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 20px 100px;
+.navbar {
+    padding: 10px 90px;
 }
 
-
-.navlinks ul {
-    display: flex;
-    gap: 24px;
-    list-style-type: none;
-    font-size: 18px;
+.navbar-collapse {
+    justify-content: end;
 }
 
-nav.black {
-    background: #3882f6
-}
-
-.logo {
-    font-size: 24px;
+.navbar-collapse .navbar-nav .nav-item .nav-link {
     color: #F8FAF9;
+    transition: color 0.3s, border-bottom 0.3s;
+    margin-right: 10px;
+
 }
 
-.navlinks ul a {
-    text-decoration: none;
-    color: #E5E7EB;
-    transform: color 0.4s, border-bottom 0.4s;
-}
-
-.navlinks ul a:hover {
-    border-bottom: 3px solid #3882f6;
+.navbar-collapse .navbar-nav .nav-item .nav-link:hover {
+    border-bottom: 2px solid #3882f6;
+    border-radius: 4px;
 }
 
 .booknow button {
@@ -73,7 +52,7 @@ nav.black {
     width: 100%;
 }
 
-.carousel {
+.homecarousel {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -97,10 +76,10 @@ nav.black {
 .leftcontent button {
     background-color: #3882f6;
     margin-top: 20px;
-    width: 100px;
+    width: 120px;
     height: 40px;
     border: none;
-    border-radius: 8px;
+    border-radius: 6px;
     color: #F8FAF9;
 }
 
@@ -114,6 +93,10 @@ nav.black {
     align-items: center;
 }
 
+.rightcontent spline-viewer{
+    width: 600px;
+    height: 500px;
+}
 
 .tours h4 {
     font-size: 36px;
@@ -242,6 +225,9 @@ nav.black {
     display: flex;
     justify-content: center;
     align-items: center;
+}
+.aboutusimg img{
+    border-radius: 10px 40px 50px 10px;
 }
 
 .aboutustxt {
@@ -448,12 +434,254 @@ nav.black {
     background-color: #E5E7EB;
 }
 
+/* about */
+.aboutuspagecontent {
+    padding: 20px 100px;
+}
+
+.aboutuspagecontent h2 {
+    text-align: center;
+    color: #1F2937;
+    padding: 20px 0;
+    font-weight: 900;
+}
+
+.aboutuspagecontent .ourstory,
+.aboutuspagecontent .ourvision {
+    display: flex;
+    flex-direction: row;
+    margin: 80px 0;
+}
+
+.aboutuspagecontent .ourstory h2 {
+    padding: 10px 40px;
+    text-align: left;
+}
+
+.aboutuspagecontent .ourvision h2 {
+    text-align: left;
+}
+
+.aboutuspagecontent .ourstory .abtimg img {
+    border-radius: 10px 40px 50px 10px;
+    width: 500px;
+}
+
+.aboutuspagecontent .ourstory .abttxt p {
+    padding: 0px 40px;
+    text-align: justify;
+}
+
+.aboutuspagecontent .ourvision .visiontxt p {
+    text-align: justify;
+    padding-right: 40px;
+}
+
+.aboutuspagecontent .ourvision .visionimg img {
+    border-radius: 40px 10px 10px 50px;
+    width: 500px;
+}
+
+.aboutuspagecontent .team .persons {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.aboutuspagecontent .team .persons .person {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 40px;
+}
+
+.aboutuspagecontent .team .persons .imgteam img {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    margin: 5px 10px;
+}
+
+.aboutuspagecontent .team .persons .text h3 {
+    font-size: 16px;
+    font-weight: 900;
+    text-align: center;
+
+}
+
+.aboutuspagecontent .team .persons .text p {
+    text-align: center;
+}
+
+.aboutuspagecontent .team .persons .socials {
+    color: #3882f6;
+    font-size: 18px;
+
+}
+
+.aboutuspagecontent .team .persons .socials i {
+    margin: 5px 5px;
+}
+
+/* contact */
+
+.contactcontent h2 {
+    text-align: center;
+    color: #1F2937;
+    padding: 20px 0;
+    font-weight: 900;
+}
+
+.contactuscontent {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 100px;
+}
+
+.contactcontent .email {
+    width: 800px;
+    height: 400px;
+    padding: 20px 40px;
+    border-radius: 8px;
+    margin-right: 20px;
+    box-shadow: 0 0 32px rgba(0, 0, 0, 0.20);
+    /* border: 2px solid #3882f6; */
+}
+
+.contactcontent .email .mail,
+.contactcontent .email .subject,
+.contactcontent .email .message {
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 20px;
+}
+
+.contactcontent .email .mail label,
+.contactcontent .email .subject label,
+.contactcontent .email .message label {
+    color: #3882f6;
+    padding-bottom: 5px;
+}
+
+.contactcontent .email .mail input,
+.contactcontent .email .subject input {
+    width: 100;
+    height: 40px;
+    border-radius: 4px;
+    border: 1px solid #333;
+    padding: 10px;
+}
+
+.contactcontent .email .message textarea {
+    width: 100%;
+    border-radius: 4px;
+    padding: 10px;
+}
+
+.contactcontent .email form {
+    display: flex;
+    flex-direction: column;
+}
+
+.contactcontent .email form .button {
+    height: 50px;
+    width: 160px;
+    background: #3882f6;
+    color: white;
+    border: #fff;
+    border-radius: 8px;
+}
+
+.contactcontent .location {
+    border-radius: 8px;
+    z-index: 1;
+    background-color: #3882f6;
+    width: 400px;
+    height: 400px;
+    padding: 30px 30px;
+}
+
+.contactcontent .location h3 {
+    color: white;
+    padding-bottom: 20px;
+
+}
+
+.contactcontent .location .contacticons {
+    display: flex;
+    flex-direction: column;
+}
+
+.contactcontent .location .contacticons a {
+    text-decoration: none;
+    padding-bottom: 40px;
+    color: white;
+}
+
+.contactcontent .location .contacticons i {
+    background-color: #ffffff2c;
+    font-size: 20px;
+    border-radius: 50%;
+    padding: 10px;
+}
+
+.contactcontent .location .socialmediaicons {
+    padding-top: 20px;
+}
+
+.contactcontent .location .socialmediaicons a {
+    color: white;
+    font-size: 25px;
+    padding-left: 45px;
+}
+
+.contactcontent .map iframe {
+    padding: 20px 100px;
+}
+
 /* blog */
-.custom-carousel-img{
+
+.blogcontent h2 {
+    text-align: center;
+    color: #1F2937;
+    padding: 20px 0;
+    font-weight: 900;
+}
+
+.custom-carousel-img {
     height: 550px;
     width: 100%;
     object-fit: cover;
 }
+
+.topblogsection .carousel {
+    width: 100%;
+    height: 550px;
+    background: #1F2937;
+}
+
+.topblogsection .carousel-control-next{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: #3882f6;
+    margin-top: 300px;
+    margin-right: 80px;
+}
+
+.topblogsection .carousel-control-prev {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: #3882f6;
+    margin-top: 300px;
+    margin-left: 80px;
+}
+
 .firstblogrow {
     display: flex;
     flex-direction: row;
@@ -494,59 +722,72 @@ nav.black {
 .firstblogrow .rightblogcontent .rightblogcarddata {
     margin-bottom: 35px;
 }
+
 .secondblogrow {
-    display :flex ;
+    display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
     padding: 20px 100px;
     margin: 40px 0;
 }
+
 .secondblogrow .blogcards2 .carddata {
     padding: 10px 20px;
     text-align: left;
     /* font-size: 16px; */
 }
-.secondblogrow .cardimage{
-    display :flex ;
+
+.secondblogrow .cardimage {
+    display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
 }
-.secondblogrow .cardimage .cardimg2{
-    height:170px;
+
+.secondblogrow .cardimage .cardimg2 {
+    height: 170px;
     width: 270px;
     border-radius: 8px;
 }
-.thirdblogrow{
-    display :flex ;
+
+.thirdblogrow {
+    display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    padding: 10px 100px; 
-    margin: 40px 0; 
+    padding: 10px 100px;
+    margin: 40px 0;
 }
-.thirdblogrow .leftcontent{
+
+.thirdblogrow .leftcontent {
     margin: 20px 20px;
 }
-.thirdblogrow .leftblogcarddata{
+
+.thirdblogrow .leftblogcarddata {
     margin-bottom: 40px;
 }
-.thirdblogrow .leftblogcarddata h5{
-font-weight: bolder;
-color: black;
-font-size: 24px; 
+
+.thirdblogrow .leftblogcarddata h5 {
+    font-weight: bolder;
+    color: black;
+    font-size: 24px;
 }
-.thirdblogrow .leftblogcarddata p{
-    color: black; font-size: 16px;
+
+.thirdblogrow .leftblogcarddata p {
+    color: black;
+    font-size: 16px;
 }
-.thirdblogrow .rightcontent .blogcards3 .carddata{
+
+.thirdblogrow .rightcontent .blogcards3 .carddata {
     text-align: left;
 }
-.thirdblogrow .rightcontent .blogcards3 .cardimg{
+
+.thirdblogrow .rightcontent .blogcards3 .cardimg {
     width: 800px;
     height: auto;
 }
+
 /* footer */
 .footersections {
     display: flex;
