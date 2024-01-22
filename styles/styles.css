@@ -82,7 +82,8 @@ footer,
     border-radius: 6px;
     color: #F8FAF9;
 }
-.leftcontent button a{
+
+.leftcontent button a {
     color: #fff;
 }
 
@@ -96,7 +97,7 @@ footer,
     align-items: center;
 }
 
-.rightcontent spline-viewer{
+.rightcontent spline-viewer {
     width: 600px;
     height: 500px;
 }
@@ -229,7 +230,8 @@ footer,
     justify-content: center;
     align-items: center;
 }
-.aboutusimg img{
+
+.aboutusimg img {
     border-radius: 10px 40px 50px 10px;
 }
 
@@ -237,11 +239,6 @@ footer,
     flex-wrap: wrap;
     padding: 1px 40px;
 }
-
-/* .aboutustxt span {
-    font-size: 24px;
-    color: #1F2937;
-} */
 
 .aboutustxt p {
 
@@ -257,7 +254,8 @@ footer,
     margin-top: 20px;
     width: 180px;
 }
-.aboutustxt button a ,
+
+.aboutustxt button a,
 .aboutustxt button a:hover {
     color: #fff;
 }
@@ -283,8 +281,7 @@ footer,
     margin: 10px 20px;
     padding-bottom: 40px;
     width: 340px;
-    /* border-radius: 10px;
-    box-shadow: 2px 2px 4px  rgba(0, 0, 0, 0.25); */
+
 }
 
 .specialofferscards .cardimage {
@@ -439,6 +436,61 @@ footer,
     color: #3882f6;
     background-color: #E5E7EB;
 }
+
+/* destination */
+.destinationcarousel .carousel-item img {
+    height: 450px;
+    width: 100%;
+    object-fit: cover;
+}
+
+
+.destinationparagraph h4 {
+    font-size: 36px;
+    font-weight: bolder;
+    color: #1F2937;
+    text-align: center;
+    padding-top: 40px;
+
+}
+
+.destinationparagraph .dash {
+    width: 80px;
+    height: 5px;
+    background-color: #1F2937;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, 50%);
+}
+
+.destinationparagraph p {
+    padding: 40px 20px;
+    text-align: center;
+}
+
+.destinationcards .card {
+    border-radius: 4px;
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.20);
+}
+
+.destinationcards .card .card-body h5 a {
+    text-decoration: none;
+    cursor: pointer;
+    color: #1F2937;
+    font-weight: bolder;
+}
+.destinationcards .card .card-body .destinationrating{
+    color: #3882f6;
+}
+
+
+.destinationcards .card .card-body p {
+    font-size: 14px;
+}
+.destinationcards .card .card-body .btn{
+    width: 160px;
+    height: 40px;
+} 
 
 /* about */
 .aboutuspagecontent {
@@ -670,7 +722,7 @@ footer,
     background: #1F2937;
 }
 
-.topblogsection .carousel-control-next{
+.topblogsection .carousel-control-next {
     width: 50px;
     height: 50px;
     border-radius: 50%;
