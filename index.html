@@ -33,7 +33,7 @@
 
                     <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                         data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
-                        aria-expanded="false" aria-label="Toggle navigation">
+                        aria-expanded="false" aria-label="Toggle navigation" style="background: white;">
                         <span class="navbar-toggler-icon"></span>
                     </button>
                     <section class="collapse navbar-collapse " id="navbarSupportedContent">
@@ -43,7 +43,8 @@
                                     onclick="sectionShow('homepage')">Home</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link active" aria-current="page" href="#">Tour Destinations</a>
+                                <a class="nav-link active" aria-current="page" href="#"
+                                    onclick="sectionShow('destinationpage')">Tour Destinations</a>
                             </li>
                             <li class="nav-item">
                                 <a class="nav-link active" aria-current="page" href="#">Tour Packages</a>
@@ -69,6 +70,7 @@
         </header>
     </section>
     <main>
+        <!-- home page -->
         <div class="homepage" id="homepage">
             <section class="homecarousel">
                 <section class="leftcontent">
@@ -77,11 +79,11 @@
                         Tour
                     </p>
                     <button><a class="nav-link active" aria-current="page" href="#"
-                        onclick="sectionShow('contactuspage')">Get in touch</a></button>
+                            onclick="sectionShow('contactuspage')">Get in touch</a></button>
                 </section>
-                <section class="rightcontent">
+                <!-- <section class="rightcontent">
                     <spline-viewer url="https://prod.spline.design/u9iCpBWYNJEP6cPA/scene.splinecode"></spline-viewer>
-                </section>
+                </section> -->
             </section>
             <!-- tours  -->
             <section class="tours">
@@ -201,7 +203,7 @@
                             adventures while positively impacting local communities
                         </p>
                         <button><a class="nav-link active" aria-current="page" href="#"
-                            onclick="sectionShow('aboutuspage')">Learn More</a></button>
+                                onclick="sectionShow('aboutuspage')">Learn More</a></button>
                     </section>
                 </section>
 
@@ -383,6 +385,188 @@
                 </section>
             </section>
         </div>
+
+        <!-- tours destination page -->
+        <div class="destinationpage" id="destinationpage" style="display: none;">
+            <section class="destinationcarousel">
+                <section id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel">
+                    <section class="carousel-inner">
+                        <section class="carousel-item active" data-bs-interval="10000">
+                            <img src="img/mount-keyna-1.jpg" class="d-block w-100" alt="...">
+
+                        </section>
+                        <section class="carousel-item">
+                            <img src="img/elephants.jpg" class="d-block w-100" alt="...">
+                        </section>
+                        <section class="carousel-item" data-bs-interval="2000">
+                            <img src="img/nationalmeusiumofkenya.jpg" class="d-block w-100" alt="...">
+                        </section>
+
+                    </section>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval"
+                        data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleInterval"
+                        data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
+                </section>
+            </section>
+            <section class="destinationparagraph">
+                <h4>Explore Our Destination Tours</h4>
+
+                <section class="dash">
+                </section>
+                <p>
+                    Explore our amazing tour destinations and embark on unforgetable journeys. <br>Each destination
+                    offers amunique blend of culture, adventure and natural beauty
+                </p>
+            </section>
+            <section class="destinationcards">
+                <section class="container">
+                    <section class="row ">
+                        <section class="col-md-4 ml-2 mb-4">
+                            <section class="card " style="width: 22rem ;">
+                                <img src="img/nairobinationalpark.jpeg" class="card-img-top" alt="...">
+                                <section class="card-body">
+                                    <h5 class="card-title"><a
+                                        href="https://www.nairobinationalparkkenya.com/" target="_blank" rel="noopener noreferrer">Nairobi National Park</a></h5>
+                                        <section class="destinationrating">
+                                            <i class="ri-star-s-fill"></i>
+                                            <i class="ri-star-s-fill"></i>
+                                            <i class="ri-star-s-fill"></i>
+                                            <i class="ri-star-s-fill"></i>
+                                            <i class="ri-star-half-s-line"></i>
+                                        </section>
+                                    <p class="card-text">Established in 1946, Nairobi National Park, situated 7 km south
+                                        of Nairobi, Kenya, is fenced on three sides, allowing wildlife to migrate to and
+                                        from the Kitengela plains. <a
+                                            href="https://www.nairobinationalparkkenya.com/" target="_blank" rel="noopener noreferrer">Explore</a></p>
+
+                                </section>
+                            </section>
+                        </section>
+                        <section class="col-md-4 ml-2 mb-4">
+                            <section class="card" style="width: 22rem; ">
+                                <img src="img/nairobinationalpark.jpeg" class="card-img-top" alt="...">
+                                <section class="card-body">
+                                    <h5 class="card-title"><a href="https://www.olpejetaconservancy.org/" target="_blank" rel="noopener noreferrer">Ol Pejeta
+                                            Conservancy</a></h5>
+                                            <section class="destinationrating">
+                                                <i class="ri-star-s-fill"></i>
+                                                <i class="ri-star-s-fill"></i>
+                                                <i class="ri-star-s-fill"></i>
+                                                <i class="ri-star-half-s-line"></i>
+                                                <i class="ri-star-s-line"></i>
+                                            </section>
+                                    <p class="card-text">It is home to the largest black
+                                        rhinoceros sanctuary, with a milestone of 100 eastern black rhinos in 2013. It
+                                        houses the last two northern white rhinos worldwide. <a
+                                            href="https://www.olpejetaconservancy.org/" target="_blank" rel="noopener noreferrer">Explore</a></p>
+
+                                </section>
+                            </section>
+                        </section>
+                        <section class="col-md-4 ml-2 mb-4">
+                            <section class="card" style="width: 22rem;">
+                                <img src="img/nairobinationalpark.jpeg" class="card-img-top" alt="...">
+                                <section class="card-body">
+                                    <h5 class="card-title"><a href="https://www.giraffecentre.org/" target="_blank" rel="noopener noreferrer">Giraffe Centre</a>
+                                    </h5>
+                                    <section class="destinationrating">
+                                        <i class="ri-star-s-fill"></i>
+                                        <i class="ri-star-s-fill"></i>
+                                        <i class="ri-star-s-fill"></i>
+                                        <i class="ri-star-s-fill"></i>
+                                        <i class="ri-star-half-s-line"></i>
+                                    </section>
+                                    <p class="card-text">The main attraction is
+                                        feeding giraffes from a raised observation platform. The Giraffe Center is also
+                                        home to several warthogs which freely roam the area along with the giraffes.<a
+                                            href="https://www.giraffecentre.org/" target="_blank" rel="noopener noreferrer">Explore</a></p>
+
+                                </section>
+                            </section>
+                        </section>
+                        <section class="col-md-4 ml-2 mb-4">
+                            <section class="card" style="width: 22rem;">
+                                <img src="img/nairobinationalpark.jpeg" class="card-img-top" alt="...">
+                                <section class="card-body">
+                                    <h5 class="card-title"><a href="https://museums.or.ke/" target="_blank" rel="noopener noreferrer">Nairobi National Museum</a></h5>
+                                    <section class="destinationrating">
+                                        <i class="ri-star-s-fill"></i>
+                                        <i class="ri-star-s-fill"></i>
+                                        <i class="ri-star-s-fill"></i>
+                                        <i class="ri-star-half-s-line"></i>
+                                        <i class="ri-star-s-line"></i>
+                                    </section>
+                                    <p class="card-text">Some quick example text to build on the card title and make
+                                        up
+                                        the
+                                        bulk of the card's content.<a href="https://museums.or.ke/" target="_blank" rel="noopener noreferrer">Explore</a></p>
+                                    
+                                </section>
+                            </section>
+                        </section>
+                        <section class="col-md-4 ml-2 mb-4">
+                            <section class="card" style="width: 22rem;">
+                                <img src="img/nairobinationalpark.jpeg" class="card-img-top" alt="...">
+                                <section class="card-body">
+                                    <h5 class="card-title"><a href="https://www.bomasofkenya.co.ke/"target="_blank" rel="noopener noreferrer">Bomas of Kenya</a></h5>
+                                    <section class="destinationrating">
+                                        <i class="ri-star-s-fill"></i>
+                                        <i class="ri-star-s-fill"></i>
+                                        <i class="ri-star-s-fill"></i>
+                                        <i class="ri-star-s-fill"></i>
+                                        <i class="ri-star-half-s-line"></i>
+                                        
+                                    </section>
+                                    <p class="card-text">Some quick example text to build on the card title and make
+                                        up
+                                        the
+                                        bulk of the card's content.<a href="https://www.bomasofkenya.co.ke/"target="_blank" rel="noopener noreferrer">Explore</a></p>
+                                    
+                                </section>
+                            </section>
+                        </section>
+                        <section class="col-md-4 ml-2 mb-4">
+                            <section class="card" style="width: 22rem;">
+                                <img src="img/nairobinationalpark.jpeg" class="card-img-top" alt="...">
+                                <section class="card-body">
+                                    <h5 class="card-title">Paradise Lost Kiambu</h5>
+                                    <section class="destinationrating">
+                                        <i class="ri-star-s-fill"></i>
+                                        <i class="ri-star-s-fill"></i>
+                                        <i class="ri-star-s-fill"></i>
+                                        <i class="ri-star-half-s-line"></i>
+                                        <i class="ri-star-s-line"></i>
+                                    </section>
+                                    <p class="card-text">Some quick example text to build on the card title and make
+                                        up
+                                        the
+                                        bulk of the card's content.</p>
+                                    <a href="#" class="btn btn-primary">Go somewhere</a>
+                                </section>
+                            </section>
+                        </section>
+                    </section>
+                </section>
+            </section>
+            <section class="callToAction">
+                <section class="leftcta">
+                    <h2>Start your adventure Today!</h2>
+                    <p>Explore our curated collection of destinations and, <br>let us craft your perfect Tour</p>
+                </section>
+                <section class="rightcta">
+                    <button><a href="#" target="_blank" rel="noopener noreferrer"></a> </button>
+                </section>
+
+            </section>
+        </div>
+
         <!-- about us page -->
         <div class="aboutuspage" id="aboutuspage" style="display: none;">
             <section class="aboutuspagecontent">
@@ -493,6 +677,7 @@
 
             </section>
         </div>
+
         <!-- contact us page -->
         <div class="contactpage" id="contactuspage" style="display: none;">
             <section class="contactcontent">
@@ -561,6 +746,7 @@
 
             </section>
         </div>
+
         <!-- blog page content -->
         <div class="blogpage" id="blogpage" style="display: none;">
             <section class="blogcontent">
@@ -762,8 +948,6 @@
     </main>
     <!-- footer content -->
     <footer>
-
-
         <section class="footersections">
             <section class="aboutfooter">
                 <h6> Serenity Travels</h6>
@@ -832,7 +1016,7 @@
         integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF"
         crossorigin="anonymous"></script>
     <script type="module" src="https://unpkg.com/@splinetool/viewer@1.0.29/build/spline-viewer.js"></script>
-    
+
     <script src="./scripts/swiper-bundle.min.js"></script>
 
     <script src="./scripts/main.js"></script>
