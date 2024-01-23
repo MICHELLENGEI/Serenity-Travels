@@ -107,7 +107,7 @@ footer,
     font-weight: bolder;
     color: #1F2937;
     text-align: center;
-    padding: 20px 0;
+    padding-top: 20px ;
 
 }
 
@@ -217,7 +217,6 @@ footer,
     font-weight: bolder;
     color: #1F2937;
     text-align: center;
-    padding-bottom: 60px;
     text-align: center;
 }
 
@@ -226,6 +225,7 @@ footer,
 }
 
 .aboutuscontent {
+    margin-top: 60px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -265,11 +265,11 @@ footer,
     font-weight: bolder;
     color: #1F2937;
     text-align: center;
-    padding-bottom: 60px;
     text-align: center;
 }
 
 .specilaofferscontainer {
+    padding-top: 60px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -340,10 +340,11 @@ footer,
     font-weight: bolder;
     color: #1F2937;
     text-align: center;
-    padding-bottom: 20px;
+   
 }
 
 .quote .testimonialimg {
+    padding-top: 20px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -444,7 +445,12 @@ footer,
     object-fit: cover;
 }
 
-
+.destinationcarousel .carousel-item .carousel-caption h1{
+    font-size: 52px;
+    font-weight: 900;
+    padding-bottom: 150px;
+    
+}
 .destinationparagraph h4 {
     font-size: 36px;
     font-weight: bolder;
@@ -454,7 +460,7 @@ footer,
 
 }
 
-.destinationparagraph .dash {
+.dash {
     width: 80px;
     height: 5px;
     background-color: #1F2937;
@@ -472,7 +478,9 @@ footer,
     border-radius: 4px;
     box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.20);
 }
-
+.destinationcards .card img{
+    height: 250px;
+}
 .destinationcards .card .card-body h5 a {
     text-decoration: none;
     cursor: pointer;
@@ -711,23 +719,23 @@ footer,
 }
 
 .custom-carousel-img {
-    height: 550px;
+    height: 450px;
     width: 100%;
     object-fit: cover;
 }
 
 .topblogsection .carousel {
     width: 100%;
-    height: 550px;
+    height: 450px;
     background: #1F2937;
 }
 
-.topblogsection .carousel-control-next {
+/* .topblogsection .carousel-control-next {
     width: 50px;
     height: 50px;
     border-radius: 50%;
     background-color: #3882f6;
-    margin-top: 300px;
+    margin-top: 200px;
     margin-right: 80px;
 }
 
@@ -736,9 +744,9 @@ footer,
     height: 50px;
     border-radius: 50%;
     background-color: #3882f6;
-    margin-top: 300px;
+    margin-top: 200px;
     margin-left: 80px;
-}
+} */
 
 .firstblogrow {
     display: flex;
