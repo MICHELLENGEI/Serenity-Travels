@@ -12,10 +12,11 @@ function sectionShow(sectionId) {
 
 
 let swiperCards = new Swiper('.cardcontent', {
-
+  slidesPerView: 'auto',
   loop: true,
   spaceBetween: 32,
   grabCursor: true,
+  centeredSlides: true,
 
   // If we need pagination
   pagination: {
@@ -28,19 +29,6 @@ let swiperCards = new Swiper('.cardcontent', {
   navigation: {
     nextEl: '.swiper-button-next',
     prevEl: '.swiper-button-prev',
-  },
-
-  breakpoints: {
-    320: {
-      slidesPerView: 1,
-    },
-    600: {
-      slidesPerView: 2,
-    },
-    968: {
-      slidesPerView: 3,
-    },
-
   },
 
 });
