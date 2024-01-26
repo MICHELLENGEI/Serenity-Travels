@@ -1,6 +1,6 @@
-# Serenity Travels Web Application
+# Serenity Travels 
 
-Welcome to the Serenity Travels web application repository! This project is designed for a travel agency named Serenity Travels, offering a range of travel tours packages, showcasing various tour destinations, and featuring a blog section.
+ This project is designed for a travel agency named Serenity Travels, offering a range of travel tours packages, showcasing various tour destinations, and featuring a blog section.
 
 ## Table of Contents
 
