@@ -507,9 +507,9 @@ footer,
     }
 
     .aboutusimg img {
-        width: 400px;
+        width: 100%;
         border-radius: 10px;
-        margin-bottom: 20px;
+        padding: 20px;
     }
 
     .aboutustxt p {
@@ -539,11 +539,9 @@ footer,
 }
 
 /* Styles for screens with a width greater than 1024 pixels (large screens like desktops) */
-@media (min-width: 1025px) {
-    body {
-        font-size: 20px;
-    }
-}
+/* @media (min-width: 1025px) {
+   
+} */
 
 /* destination */
 .destinationcarousel .carousel-item img {
@@ -618,9 +616,8 @@ footer,
 }
 
 .aboutuspagecontent h2 {
-    text-align: center;
+    text-align: left;
     color: #1F2937;
-    padding: 20px 0;
     font-weight: 900;
 }
 
@@ -636,9 +633,6 @@ footer,
     text-align: left;
 }
 
-.aboutuspagecontent .ourvision h2 {
-    text-align: left;
-}
 
 .aboutuspagecontent .ourstory .abtimg img {
     border-radius: 10px 40px 50px 10px;
@@ -702,7 +696,64 @@ footer,
 .aboutuspagecontent .team .persons .socials i {
     margin: 5px 5px;
 }
+@media (max-width: 769px) {
+    .aboutuspagecontent {
+        padding: 10px 50px;
+    }
+    .aboutuspagecontent h2 {
+        text-align: center;
+        
+    }
+    .aboutuspagecontent .ourstory {
+        display: flex;
+        flex-direction: column;
+        margin: 40px 0;
+    }
+   
+    .aboutuspagecontent .ourstory .abtimg img {
+        border-radius: 10px;
+        width: 100%;
+        
+    }
+    .aboutuspagecontent .ourstory h2,
+    .aboutuspagecontent .ourvision .visiontxt h2
+     {
+        padding: 10px;
+        text-align: left;
+    }
+    .aboutuspagecontent .ourstory .abttxt p {
+        text-align: justify;
+        padding: 10px;
+    }
+    .aboutuspagecontent .ourvision {
+        display: flex;
+        flex-direction: column-reverse;
+        margin: 40px 0;
+    }
+    .aboutuspagecontent .ourvision .visionimg img {
+        border-radius: 10px ;
+        width: 100%;
+    }
+    .aboutuspagecontent .team .persons {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .aboutuspagecontent .team .persons .person {
+        margin: 20px;
+    }
+}
 
+/* Styles for screens with a width between 769 and 1024 pixels (medium screens like tablets) */
+/* @media (min-width: 769px) and (max-width: 1024px) {
+   
+} */
+
+/* Styles for screens with a width greater than 1024 pixels (large screens like desktops) */
+/* @media (min-width: 1025px) {
+   
+} */
 /* contact */
 
 .contactcontent h2 {
@@ -1076,20 +1127,15 @@ footer .bottom p {
         justify-content: start;
         align-items: start;
         color: white;
-        padding: 20px 0;
+        padding: 40px 0;
     }
 }
 
 /* Styles for screens with a width between 769 and 1024 pixels (medium screens like tablets) */
-@media (min-width: 769px) and (max-width: 1024px) {
-    .navbar-brand {
-        font-size: 24px;
-    }
-}
+/* @media (min-width: 769px) and (max-width: 1024px) {
+} */
 
 /* Styles for screens with a width greater than 1024 pixels (large screens like desktops) */
-@media (min-width: 1025px) {
-    body {
-        font-size: 20px;
-    }
-}
+/* @media (min-width: 1025px) {
+  
+} */
