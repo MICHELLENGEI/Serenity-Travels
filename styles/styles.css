@@ -3,6 +3,7 @@
     padding: 0;
 }
 
+
 header,
 footer,
 .navbar-brand,
@@ -17,13 +18,30 @@ footer,
 
 }
 
+.navbar {
+    padding: 20px 90px;
+}
+
 .navbar-brand {
     color: #F8FAF9;
     font-size: 32px;
 }
 
-.navbar {
-    padding: 10px 90px;
+.navbar-brand:hover {
+    color: #fff;
+}
+
+
+
+.navbar-toggler {
+    background: white;
+    color: #0a0a0a05;
+}
+
+.navbar-toggler-remixicon {
+    color: #1F2937;
+    font-weight: 900;
+
 }
 
 .navbar-collapse {
@@ -42,21 +60,14 @@ footer,
     border-radius: 4px;
 }
 
-.booknow button {
-    background-color: #3882f6;
-    color: #F8FAF9;
-    border: none;
-    font-size: 16px;
-    border-radius: 8px;
-    padding: 10px 20px;
-    width: 100%;
-}
-
 .homecarousel {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 40px 100px;
+}
+
+.leftcontent {
+    padding-left: 100px;
 }
 
 .leftcontent h3 {
@@ -93,7 +104,7 @@ footer,
 }
 
 .rightcontent {
-    justify-content: center;
+    justify-content: right;
     align-items: center;
 }
 
@@ -107,7 +118,7 @@ footer,
     font-weight: bolder;
     color: #1F2937;
     text-align: center;
-    padding-top: 20px ;
+    padding-top: 20px;
 
 }
 
@@ -146,7 +157,6 @@ footer,
 
 .carddata {
     text-align: center;
-
 
 }
 
@@ -208,10 +218,6 @@ footer,
     }
 }
 
-/* medium devices */
-
-/* large devices */
-
 .aboutus h4 {
     font-size: 36px;
     font-weight: bolder;
@@ -240,10 +246,6 @@ footer,
     padding: 1px 40px;
 }
 
-.aboutustxt p {
-
-    row-gap: 20px;
-}
 
 .aboutustxt button {
     background-color: #1F2937;
@@ -253,11 +255,19 @@ footer,
     border-radius: 8px;
     margin-top: 20px;
     width: 180px;
+    height: 40px;
 }
 
 .aboutustxt button a,
 .aboutustxt button a:hover {
     color: #fff;
+}
+
+.specilaoffers {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 60px;
 }
 
 .specialoffers h4 {
@@ -270,30 +280,23 @@ footer,
 
 .specilaofferscontainer {
     padding-top: 60px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: row;
-
 }
 
-.specialofferscards {
+/* .specialofferscards {
     margin: 10px 20px;
-    padding-bottom: 40px;
-    width: 340px;
+} */
 
-}
-
-.specialofferscards .cardimage {
-    width: 100%;
+/* .specialoffers .card .cardimage {
+    width: 350px;
+    height: auto;
     position: relative;
-}
+} */
 
-.specialofferscards .cardname {
+.specialoffers .card .cardname {
     color: #3882f6;
 }
 
-.specialofferscards .cardimage .topimg {
+.specialoffers .card .cardimage .topimg {
     top: -8px;
     right: -24px;
     z-index: 1;
@@ -313,7 +316,7 @@ footer,
     color: red;
 }
 
-.specialofferscards .cardbuttons {
+.specialoffers .card .cardbuttons {
     display: flex;
     justify-content: space-around;
 
@@ -340,7 +343,7 @@ footer,
     font-weight: bolder;
     color: #1F2937;
     text-align: center;
-   
+
 }
 
 .quote .testimonialimg {
@@ -438,6 +441,98 @@ footer,
     background-color: #E5E7EB;
 }
 
+/* homepage */
+/* Styles for screens with a maximum width of 768 pixels (small screens like smartphones) */
+@media (max-width: 768px) {
+    .navbar {
+        padding: 10px 40px;
+    }
+
+    .navbar-brand {
+        color: #F8FAF9;
+        font-size: 24px;
+    }
+
+    .homecarousel {
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+
+    .leftcontent {
+        padding-left: 50px;
+    }
+
+    .leftcontent h3 {
+        font-size: 30px;
+    }
+
+    .leftcontent button {
+        width: 100px;
+        margin: 20px 0px;
+    }
+
+    .rightcontent spline-viewer {
+        width: 400px;
+
+    }
+
+    .cardcontainer {
+        padding: 40px 20px;
+        margin: 0px 20px;
+
+    }
+
+    .aboutus {
+        margin: 60px 0;
+    }
+
+    .aboutuscontent {
+        margin-top: 60px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .aboutusimg img {
+        width: 400px;
+        border-radius: 10px;
+        margin-bottom: 20px;
+    }
+
+    .aboutustxt p {
+        text-align: justify;
+    }
+
+
+    .quote {
+        padding: 60px 50px;
+    }
+    .quote .testimonialcardcontent p {
+        font-size: 24px;
+    }
+    .callToAction {
+        justify-content: start;
+        flex-direction: column;
+        margin: 60px 50px;
+    }
+}
+
+/* Styles for screens with a width between 769 and 1024 pixels (medium screens like tablets) */
+@media (min-width: 769px) and (max-width: 1024px) {
+    .navbar-brand {
+        font-size: 24px;
+    }
+}
+
+/* Styles for screens with a width greater than 1024 pixels (large screens like desktops) */
+@media (min-width: 1025px) {
+    body {
+        font-size: 20px;
+    }
+}
+
 /* destination */
 .destinationcarousel .carousel-item img {
     height: 450px;
@@ -445,12 +540,13 @@ footer,
     object-fit: cover;
 }
 
-.destinationcarousel .carousel-item .carousel-caption h1{
+.destinationcarousel .carousel-item .carousel-caption h1 {
     font-size: 52px;
     font-weight: 900;
     padding-bottom: 150px;
-    
+
 }
+
 .destinationparagraph h4 {
     font-size: 36px;
     font-weight: bolder;
@@ -478,16 +574,19 @@ footer,
     border-radius: 4px;
     box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.20);
 }
-.destinationcards .card img{
+
+.destinationcards .card img {
     height: 250px;
 }
+
 .destinationcards .card .card-body h5 a {
     text-decoration: none;
     cursor: pointer;
     color: #1F2937;
     font-weight: bolder;
 }
-.destinationcards .card .card-body .destinationrating{
+
+.destinationcards .card .card-body .destinationrating {
     color: #3882f6;
 }
 
@@ -495,10 +594,11 @@ footer,
 .destinationcards .card .card-body p {
     font-size: 14px;
 }
-.destinationcards .card .card-body .btn{
+
+.destinationcards .card .card-body .btn {
     width: 160px;
     height: 40px;
-} 
+}
 
 /* about */
 .aboutuspagecontent {
