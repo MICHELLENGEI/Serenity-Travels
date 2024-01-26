@@ -126,7 +126,7 @@ footer,
     display: flex;
     justify-content: center;
     align-items: center;
-
+    height: auto;
 }
 
 .cardcontainer {
@@ -142,10 +142,9 @@ footer,
 }
 
 .cardarticle {
-    /* width: 300px; */
+    max-width: 300px;
     overflow: hidden;
     border-radius: 8px;
-    /* border: 2px solid teal; */
     box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.20);
 }
 
@@ -157,7 +156,6 @@ footer,
 
 .carddata {
     text-align: center;
-
 }
 
 .cardname {
@@ -183,26 +181,27 @@ footer,
     width: 100px;
 }
 
+.cardbutton button:hover {
+    background-color: white;
+    color: teal;
+    border: 2px solid teal;
+}
+
 .swiper-button-prev::after,
 .swiper-button-next::after {
     content: '';
 }
 
-.swiper-button-next {
-    right: -20px;
-}
-
-.swiper-button-prev {
-    left: -20px;
-}
 
 .swiper-button-next,
 .swiper-button-prev {
-    width: initial;
-    height: initial;
-    font-size: 4em;
-    color: teal;
-    display: block;
+    width: 50px;
+    height: 50px;
+    font-size: 2em;
+    color: white;
+    background-color: teal;
+    border-radius: 50%;
+    z-index: 500;
 }
 
 .swiper-pagination .swiper-pagination-bullet.swiper-pagination-bullet-active {
@@ -246,6 +245,9 @@ footer,
     padding: 1px 40px;
 }
 
+.aboutustxt p {
+    font-size: 16px;
+}
 
 .aboutustxt button {
     background-color: #1F2937;
@@ -258,17 +260,18 @@ footer,
     height: 40px;
 }
 
-.aboutustxt button a,
-.aboutustxt button a:hover {
-    color: #fff;
+.aboutustxt button:hover {
+    background-color: white;
+    color: #1F2937;
+    border: 2px solid #1F2937;
+
 }
 
-.specilaoffers {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding-top: 60px;
+
+.aboutustxt button a:hover {
+    color: #1F2937;
 }
+
 
 .specialoffers h4 {
     font-size: 36px;
@@ -282,18 +285,22 @@ footer,
     padding-top: 60px;
 }
 
-/* .specialofferscards {
-    margin: 10px 20px;
-} */
+.specialoffers .card {
+    border: none;
+    margin-bottom: 20px;
+}
 
-/* .specialoffers .card .cardimage {
-    width: 350px;
+.specialoffers .card .cardimage {
+    width: 100%;
     height: auto;
     position: relative;
-} */
+}
+
+
 
 .specialoffers .card .cardname {
     color: #3882f6;
+    text-align: left;
 }
 
 .specialoffers .card .cardimage .topimg {
@@ -306,18 +313,23 @@ footer,
 }
 
 
-.carddata .rating {
+.specialoffers .card .rating {
     display: flex;
     justify-content: space-between;
     padding: 10px 12px;
 }
 
-.carddata .rating i {
+.specialoffers .card .rating i {
     color: red;
+}
+
+.specialoffers .card .carddescription {
+    text-align: left;
 }
 
 .specialoffers .card .cardbuttons {
     display: flex;
+    float: left;
     justify-content: space-around;
 
 }
@@ -330,6 +342,12 @@ footer,
     border: none;
     color: #fff;
     border-radius: 8px;
+}
+
+.cardbtnspecialoffers button:hover {
+    background-color: #fff;
+    border: 2px solid #3882f6;
+    color: #3882f6;
 }
 
 .quote {
@@ -368,6 +386,7 @@ footer,
     font-style: italic;
     color: #1F2937;
     margin: 0 40px;
+    text-align: center;
 }
 
 .quote .testimonialcardcontent .name h2 {
@@ -383,26 +402,18 @@ footer,
     content: '';
 }
 
-.quote .swiper-button-next {
-    right: -20px;
-}
 
-.quote .swiper-button-prev {
-    left: -20px;
-}
 
 .quote .swiper-button-next,
 .quote .swiper-button-prev {
-    width: initial;
-    height: initial;
-    font-size: 4em;
-    color: #1F2937;
-    display: block;
+    width: 50px;
+    height: 50px;
+    font-size: 3em;
+    color: white;
+    background-color: #1F2937;
 }
 
-.swiper-pagination .swiper-pagination-bullet.swiper-pagination-bullet-active {
-    background-color: teal;
-}
+
 
 .callToAction {
     display: flex;
@@ -505,13 +516,14 @@ footer,
         text-align: justify;
     }
 
-
     .quote {
         padding: 60px 50px;
     }
+
     .quote .testimonialcardcontent p {
         font-size: 24px;
     }
+
     .callToAction {
         justify-content: start;
         flex-direction: column;
@@ -993,13 +1005,20 @@ footer .footersections .aboutfooter {
 }
 
 
-footer .footersections .contacticons a,
+footer .footersections .contacticons i,
 footer .footersections .socialmediaicons a,
 footer .footersections .quicklinkicons a {
     text-decoration: none;
     color: white;
     padding-top: 20px;
     font-size: 14px;
+    transition: font-size 0.3s ease;
+}
+
+footer .footersections .socialmediaicons a:hover,
+footer .footersections .quicklinkicons a:hover {
+    color: #3882f6;
+    font-size: 16px;
 }
 
 footer .footersections .aboutfooter p {
@@ -1048,4 +1067,29 @@ footer p {
 
 footer .bottom p {
     font-size: 12px;
+}
+
+@media (max-width: 769px) {
+    .footersections {
+        display: flex;
+        flex-direction: column;
+        justify-content: start;
+        align-items: start;
+        color: white;
+        padding: 20px 0;
+    }
+}
+
+/* Styles for screens with a width between 769 and 1024 pixels (medium screens like tablets) */
+@media (min-width: 769px) and (max-width: 1024px) {
+    .navbar-brand {
+        font-size: 24px;
+    }
+}
+
+/* Styles for screens with a width greater than 1024 pixels (large screens like desktops) */
+@media (min-width: 1025px) {
+    body {
+        font-size: 20px;
+    }
 }
